@@ -4,10 +4,10 @@
 // Station/Exit/POI schema from SPEC.md, and writes data/stations.json,
 // data/exits.json, data/pois.json.
 //
-// Also emits `footprint`/`platforms` on Station — a schema extension not
-// yet in SPEC.md, added while prototyping the schematic map (see the note
-// in src/data/fixtures.js). Flat and additive; drop it here if it doesn't
-// end up earning its keep in the UI.
+// Also emits `footprint`/`platforms`/`streets` on Station — a schema
+// extension not yet in SPEC.md, added while prototyping the schematic map
+// (see the note in src/data/fixtures.js). Flat and additive; drop it here
+// if it doesn't end up earning its keep in the UI.
 
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
@@ -52,6 +52,13 @@ function isMetroWay(el) {
 // so a substring check throws out legitimate exits as often as it catches
 // bad ones.
 const MAX_ENTRANCE_TO_STRUCTURE_M = 150
+
+// Overpass's `around` filter includes a whole way if ANY node falls inside
+// the query radius, so a street can run well past our 350m pull radius.
+// Clip each way's points to this distance instead of relying on the query
+// radius for a visual boundary — keeps streets from wildly blowing out the
+// map's scale when one end of a long avenue is technically "in range."
+const MAX_STREET_POINT_DISTANCE_M = 400
 
 function wayCentroid(geometry) {
   const lat = geometry.reduce((sum, p) => sum + p.lat, 0) / geometry.length
@@ -128,6 +135,28 @@ function normalizePlatforms(structureWays, slug) {
     }))
 }
 
+// Points that fall outside the clip distance are dropped, not the whole
+// way — a street that exits and re-enters range would draw a straight
+// jump across the gap. Rare at this scale, and preferable to losing the
+// whole segment.
+function normalizeStreets(rawStreets, center, slug) {
+  return rawStreets
+    .filter((el) => el.type === 'way' && el.geometry?.length)
+    .map((way) => ({
+      way,
+      points: way.geometry.filter((p) => distanceMeters(center, p) <= MAX_STREET_POINT_DISTANCE_M),
+    }))
+    .filter(({ points }) => points.length >= 2)
+    .map(({ way, points }) => {
+      const name = way.tags?.name ?? way.tags?.['name:en']
+      return {
+        id: `street.${slug}.${way.id}`,
+        ...(name ? { name } : {}),
+        points: points.map((p) => [p.lat, p.lon]),
+      }
+    })
+}
+
 function normalizePois(raw, slug, stationId) {
   return raw.pois
     .filter((el) => el.tags?.name || el.tags?.['name:en'])
@@ -174,6 +203,7 @@ function normalizeStation(seedStation, raw) {
 
   const footprint = normalizeFootprint(structureWays)
   const platforms = normalizePlatforms(structureWays, slug)
+  const streets = normalizeStreets(raw.streets ?? [], raw.resolved_center, slug)
 
   const station = {
     id: seedStation.id,
@@ -184,6 +214,7 @@ function normalizeStation(seedStation, raw) {
     line_ids: seedStation.line_ids,
     ...(footprint ? { footprint } : {}),
     ...(platforms.length ? { platforms } : {}),
+    ...(streets.length ? { streets } : {}),
   }
 
   return { station, exits, pois }
@@ -214,7 +245,7 @@ async function normalize() {
     allPois.push(...pois)
 
     console.log(
-      `${station.name_en}: ${exits.length} exits, ${pois.length} POIs, footprint=${Boolean(station.footprint)}, platforms=${station.platforms?.length ?? 0}`,
+      `${station.name_en}: ${exits.length} exits, ${pois.length} POIs, footprint=${Boolean(station.footprint)}, platforms=${station.platforms?.length ?? 0}, streets=${station.streets?.length ?? 0}`,
     )
   }
 

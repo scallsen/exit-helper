@@ -18,6 +18,14 @@
   fill: var(--color-border);
 }
 
+.station-map-street {
+  fill: none;
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+  stroke-linecap: square;
+  opacity: 0.7;
+}
+
 .station-map-footprint {
   fill: var(--color-bg-elevated);
   stroke: var(--color-border);

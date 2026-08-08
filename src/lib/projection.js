@@ -8,37 +8,54 @@ function lonMetersPerDeg(lat) {
   return 111320 * Math.cos((lat * Math.PI) / 180)
 }
 
-// Projects points around a center (usually the station) into {x, y} within
-// a square viewBox of `size`, padded so markers never sit flush on the edge.
-export function projectPoints(center, points, { size = 320, padding = 48 } = {}) {
-  const lonScale = lonMetersPerDeg(center.lat)
-
-  const toMeters = (p) => ({
-    mx: (p.lon - center.lon) * lonScale,
+function toMeters(center, p) {
+  return {
+    mx: (p.lon - center.lon) * lonMetersPerDeg(center.lat),
     my: (p.lat - center.lat) * LAT_METERS_PER_DEG,
+  }
+}
+
+// Scale (px per meter) that fits `points` within a square viewBox of
+// `size`, padded so markers never sit flush on the edge. Computed
+// separately from projectWithScale so a wider, lower-priority point set
+// (e.g. streets, which can run much farther out than the station's own
+// exits/POIs) can be projected at the SAME scale as the primary content
+// without being allowed to zoom it out — see StationMap.jsx.
+export function computeScale(center, points, { size = 320, padding = 48 } = {}) {
+  const maxExtent = points.reduce((max, p) => {
+    const { mx, my } = toMeters(center, p)
+    return Math.max(max, Math.abs(mx), Math.abs(my))
+  }, 1)
+  return (size / 2 - padding) / maxExtent
+}
+
+// Projects points around a center (usually the station) into {x, y} at a
+// given scale. Points that land outside the viewBox are left as-is — the
+// SVG element clips them visually (default UA overflow:hidden on <svg>).
+export function projectWithScale(center, points, scale, size = 320) {
+  return points.map((p) => {
+    const { mx, my } = toMeters(center, p)
+    return {
+      ...p,
+      x: size / 2 + mx * scale,
+      // screen y grows downward; lat grows north, so flip
+      y: size / 2 - my * scale,
+    }
   })
+}
 
-  const withMeters = points.map((p) => ({ ...p, ...toMeters(p) }))
-  const maxExtent = withMeters.reduce(
-    (max, p) => Math.max(max, Math.abs(p.mx), Math.abs(p.my)),
-    1,
-  )
-
-  const half = size / 2 - padding
-  const scale = half / maxExtent
-
-  return withMeters.map((p) => ({
-    ...p,
-    x: size / 2 + p.mx * scale,
-    // screen y grows downward; lat grows north, so flip
-    y: size / 2 - p.my * scale,
-  }))
+// Convenience: auto-fits `points` to the viewBox and projects them in one
+// call. Use computeScale + projectWithScale directly when a second, wider
+// point set needs to share the same scale without influencing it.
+export function projectPoints(center, points, opts = {}) {
+  const scale = computeScale(center, points, opts)
+  return projectWithScale(center, points, scale, opts.size ?? 320)
 }
 
 // Snaps a projected coordinate to a small grid so structural shapes
-// (building footprint, platforms) read as blocky/stepped rather than
-// smooth OSM curves — reinforces the dot-matrix identity (see CLAUDE.md).
-// Exit/POI markers are NOT snapped — only context geometry.
+// (building footprint, platforms, streets) read as blocky/stepped rather
+// than smooth OSM curves — reinforces the dot-matrix identity (see
+// CLAUDE.md).  Exit/POI markers are NOT snapped — only context geometry.
 export function snapToGrid(value, step = 8) {
   return Math.round(value / step) * step
 }

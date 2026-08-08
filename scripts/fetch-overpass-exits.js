@@ -29,6 +29,16 @@ const USER_AGENT = 'exit-helper-data-pull/0.1 (personal project; https://github.
 const EXIT_RADIUS_M = 200
 const STRUCTURE_RADIUS_M = 300
 const POI_RADIUS_M = 300
+// Wider than the others since a street is only useful as context if it
+// reaches past the station's own footprint — normalize.js clips the
+// geometry rather than relying on this radius for a hard visual boundary.
+const STREET_RADIUS_M = 350
+
+// Major-to-minor named roads plus pedestrian streets — excludes
+// service/track/footway/path/steps/cycleway, which are numerous, mostly
+// unnamed, and add noise rather than orientation context at this scale.
+const STREET_HIGHWAY_VALUES =
+  'motorway|trunk|primary|secondary|tertiary|residential|living_street|unclassified|pedestrian'
 
 // Curated to "notable" categories matching SPEC.md's examples (landmarks,
 // schools, hospitals) — an unfiltered shop/amenity/tourism/leisure pull
@@ -133,6 +143,16 @@ function buildStructureQuery(center) {
   `
 }
 
+function buildStreetsQuery(center) {
+  return `
+    [out:json][timeout:40];
+    (
+      way(around:${STREET_RADIUS_M},${center.lat},${center.lon})[highway~"^(${STREET_HIGHWAY_VALUES})$"];
+    );
+    out geom;
+  `
+}
+
 function buildPoiQuery(center) {
   const clauses = POI_TAG_FILTERS.flatMap((filter) => [
     `node(around:${POI_RADIUS_M},${center.lat},${center.lon})[${filter}];`,
@@ -158,10 +178,12 @@ async function fetchStation(station) {
   await sleep(2000)
   const structure = await overpassFetch(buildStructureQuery(center))
   await sleep(2000)
+  const streets = await overpassFetch(buildStreetsQuery(center))
+  await sleep(2000)
   const pois = await overpassFetch(buildPoiQuery(center))
 
   console.log(
-    `  entrances: ${exits.elements.length}, footprint/platform elements: ${structure.elements.length}, notable POIs: ${pois.elements.length}`,
+    `  entrances: ${exits.elements.length}, footprint/platform elements: ${structure.elements.length}, streets: ${streets.elements.length}, notable POIs: ${pois.elements.length}`,
   )
 
   return {
@@ -170,6 +192,7 @@ async function fetchStation(station) {
     fetched_at: new Date().toISOString(),
     entrances: exits.elements,
     structure: structure.elements,
+    streets: streets.elements,
     pois: pois.elements,
   }
 }

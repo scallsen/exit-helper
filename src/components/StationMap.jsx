@@ -1,8 +1,9 @@
 import { useMemo, useState } from 'react'
-import { projectPoints, snapToGrid } from '../lib/projection.js'
+import { computeScale, projectWithScale, snapToGrid } from '../lib/projection.js'
 import './StationMap.css'
 
 const SIZE = 320
+const PADDING = 40
 
 function toSvgPoints(pts) {
   return pts.map((p) => `${snapToGrid(p.x)},${snapToGrid(p.y)}`).join(' ')
@@ -10,9 +11,10 @@ function toSvgPoints(pts) {
 
 // Stylized schematic diagram of a station — exits and POIs as pixel-style
 // markers on a local plot, not real basemap tiles. See CLAUDE.md: real
-// OSM/Leaflet tiles would clash with the retro sign aesthetic. Footprint
-// and platform geometry (if present) are context shapes, not a floor plan
-// — see the note in fixtures.js on why real indoor walls aren't available.
+// OSM/Leaflet tiles would clash with the retro sign aesthetic. Footprint,
+// platform, and street geometry (if present) are context shapes, not a
+// floor plan or a navigable map — see the note in fixtures.js on why real
+// indoor walls aren't available.
 export default function StationMap({
   station,
   exits,
@@ -25,9 +27,17 @@ export default function StationMap({
 
   const footprint = useMemo(() => station.footprint ?? [], [station])
   const platforms = useMemo(() => station.platforms ?? [], [station])
+  const streets = useMemo(() => station.streets ?? [], [station])
 
-  const projected = useMemo(() => {
-    const points = [
+  // Scale is fit to the station's own content (exits/POIs/footprint/
+  // platforms) only. Streets reuse this same scale rather than joining the
+  // fit — they can run much farther out than the station itself, and
+  // letting them into the auto-fit would shrink the actual signage to make
+  // room for a distant avenue. Streets that land outside the viewBox at
+  // this scale just get clipped, which is the right behavior for "context
+  // that runs off-frame."
+  const corePoints = useMemo(
+    () => [
       ...exits.map((e) => ({ ...e, kind: 'exit' })),
       ...pois.map((p) => ({ ...p, kind: 'poi' })),
       ...(destination ? [{ ...destination, kind: 'destination' }] : []),
@@ -41,9 +51,31 @@ export default function StationMap({
           platformIdx: pIdx,
         })),
       ),
-    ]
-    return projectPoints(station, points, { size: SIZE, padding: 40 })
-  }, [station, exits, pois, destination, footprint, platforms])
+    ],
+    [exits, pois, destination, footprint, platforms],
+  )
+
+  const scale = useMemo(
+    () => computeScale(station, corePoints, { size: SIZE, padding: PADDING }),
+    [station, corePoints],
+  )
+  const projected = useMemo(
+    () => projectWithScale(station, corePoints, scale, SIZE),
+    [station, corePoints, scale],
+  )
+
+  const streetPointsRaw = useMemo(
+    () =>
+      streets.flatMap((street, sIdx) =>
+        street.points.map(([lat, lon], i) => ({ id: `street-${sIdx}-${i}`, lat, lon, streetIdx: sIdx })),
+      ),
+    [streets],
+  )
+  const projectedStreets = useMemo(
+    () => projectWithScale(station, streetPointsRaw, scale, SIZE),
+    [station, streetPointsRaw, scale],
+  )
+  const streetLines = streets.map((_, sIdx) => projectedStreets.filter((p) => p.streetIdx === sIdx))
 
   const exitPoints = projected.filter((p) => p.kind === 'exit')
   const poiPoints = projected.filter((p) => p.kind === 'poi')
@@ -68,6 +100,12 @@ export default function StationMap({
           </pattern>
         </defs>
         <rect width={SIZE} height={SIZE} fill="url(#station-map-grid)" />
+
+        {streetLines.map((pts, idx) =>
+          pts.length > 1 ? (
+            <polyline key={idx} className="station-map-street" points={toSvgPoints(pts)} />
+          ) : null,
+        )}
 
         {footprintPoints.length > 2 && (
           <polygon className="station-map-footprint" points={toSvgPoints(footprintPoints)} />

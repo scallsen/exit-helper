@@ -22,7 +22,6 @@ export default function StationPicker({ selectedStation, onSelect }) {
           }}
         >
           <span>{selectedStation.name_en}</span>
-          <span className="station-picker-summary-ja">{selectedStation.name_ja}</span>
           <span className="station-picker-change">Change</span>
         </button>
       </div>
@@ -68,7 +67,6 @@ export default function StationPicker({ selectedStation, onSelect }) {
                 }}
               >
                 <span className="station-picker-option-en">{station.name_en}</span>
-                <span className="station-picker-option-ja">{station.name_ja}</span>
               </button>
             </li>
           ))}

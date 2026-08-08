@@ -70,12 +70,6 @@
   outline: none;
 }
 
-.station-picker-option-ja {
-  font-family: var(--font-ja);
-  color: var(--color-text-muted);
-  font-size: 13px;
-}
-
 .station-picker-empty {
   padding: var(--space-3);
   color: var(--color-text-muted);
@@ -99,12 +93,6 @@
   color: var(--color-text);
   padding: 0 var(--space-3);
   font-family: var(--font-body);
-}
-
-.station-picker-summary-ja {
-  font-family: var(--font-ja);
-  color: var(--color-text-muted);
-  font-size: 13px;
 }
 
 .station-picker-change {

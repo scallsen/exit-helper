@@ -1,0 +1,2441 @@
+{
+  "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+  "resolved_center": {
+    "lat": 35.6996103,
+    "lon": 139.7649486,
+    "resolvedVia": "operator-match"
+  },
+  "fetched_at": "2026-08-08T06:40:55.349Z",
+  "entrances": [
+    {
+      "type": "node",
+      "id": 610282653,
+      "lat": 35.699094,
+      "lon": 139.765352,
+      "tags": {
+        "check_date:wheelchair": "2022-11-18",
+        "name": "新御茶ノ水",
+        "name:en": "Shin-Ochanomizu",
+        "name:ko": "신오차노미즈",
+        "network": "東京メトロ",
+        "operator": "東京地下鉄",
+        "railway": "subway_entrance",
+        "ref": "B1",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1814907887,
+      "lat": 35.7004098,
+      "lon": 139.7641236,
+      "tags": {
+        "name": "お茶の水駅",
+        "name:en": "Ochanomizu Sta.",
+        "name:ko": "오차노미즈역",
+        "note": "池袋方面",
+        "railway": "subway_entrance",
+        "ref": "2",
+        "source": "image;Bing,2007-04",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2272645069,
+      "lat": 35.6988644,
+      "lon": 139.7658649,
+      "tags": {
+        "name": "新御茶ノ水",
+        "name:en": "Shin-Ochanomizu",
+        "name:ko": "신오차노미즈",
+        "railway": "subway_entrance",
+        "ref": "B2",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2393625567,
+      "lat": 35.700649,
+      "lon": 139.764253,
+      "tags": {
+        "name": "お茶の水駅",
+        "name:ko": "오차노미즈역",
+        "note": "荻窪方面",
+        "operator": "東京地下鉄",
+        "railway": "subway_entrance",
+        "ref": "1"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2744987519,
+      "lat": 35.6981024,
+      "lon": 139.765268,
+      "tags": {
+        "entrance": "main"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5326377136,
+      "lat": 35.7006647,
+      "lon": 139.7659276,
+      "tags": {
+        "entrance": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5504160551,
+      "lat": 35.6981728,
+      "lon": 139.7651447,
+      "tags": {
+        "entrance": "main"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6150699510,
+      "lat": 35.7007974,
+      "lon": 139.7640614,
+      "tags": {
+        "entrance": "main"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6150973323,
+      "lat": 35.6995965,
+      "lon": 139.763724,
+      "tags": {
+        "entrance": "main"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6417161348,
+      "lat": 35.7011729,
+      "lon": 139.7647219,
+      "tags": {
+        "entrance": "main"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6988063075,
+      "lat": 35.6999152,
+      "lon": 139.7636624,
+      "tags": {
+        "entrance": "main",
+        "name": "御茶ノ水橋口",
+        "name:en": "Ochanomizubashi Entrance",
+        "railway": "train_station_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7018312835,
+      "lat": 35.6995155,
+      "lon": 139.765034,
+      "tags": {
+        "entrance": "yes",
+        "name": "聖橋口",
+        "name:en": "Hijiribashi Entrance",
+        "railway": "train_station_entrance"
+      }
+    },
+    {
+      "type": "node",
+      "id": 7018312837,
+      "lat": 35.6992466,
+      "lon": 139.7658365,
+      "tags": {
+        "access": "customers",
+        "door": "yes",
+        "entrance": "emergency"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13611007924,
+      "lat": 35.6993602,
+      "lon": 139.7642976,
+      "tags": {
+        "entrance": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13611007925,
+      "lat": 35.699159,
+      "lon": 139.7641887,
+      "tags": {
+        "entrance": "yes"
+      }
+    }
+  ],
+  "structure": [
+    {
+      "type": "way",
+      "id": 143820280,
+      "bounds": {
+        "minlat": 35.6994513,
+        "minlon": 139.7636012,
+        "maxlat": 35.7000165,
+        "maxlon": 139.765086
+      },
+      "nodes": [
+        1573806472,
+        2393625550,
+        2393625543,
+        1573806460,
+        8443490053,
+        8443490055,
+        8443490065,
+        8443490064,
+        12058400778,
+        7018312835,
+        12058400777,
+        8443490056,
+        8443490059,
+        8443490058,
+        8443490057,
+        8443490054,
+        8443490052,
+        1573806462,
+        1573806465,
+        1573806461,
+        1573806468,
+        1573806466,
+        6988063075,
+        2393625555,
+        1573806467,
+        1573806472
+      ],
+      "geometry": [
+        {
+          "lat": 35.7000165,
+          "lon": 139.7636277
+        },
+        {
+          "lat": 35.7000016,
+          "lon": 139.7636686
+        },
+        {
+          "lat": 35.7000082,
+          "lon": 139.7636726
+        },
+        {
+          "lat": 35.6999164,
+          "lon": 139.7639333
+        },
+        {
+          "lat": 35.6998788,
+          "lon": 139.7639152
+        },
+        {
+          "lat": 35.6998445,
+          "lon": 139.7640576
+        },
+        {
+          "lat": 35.6999072,
+          "lon": 139.7640824
+        },
+        {
+          "lat": 35.699715,
+          "lon": 139.7648687
+        },
+        {
+          "lat": 35.6996652,
+          "lon": 139.765086
+        },
+        {
+          "lat": 35.6995155,
+          "lon": 139.765034
+        },
+        {
+          "lat": 35.6994513,
+          "lon": 139.7650117
+        },
+        {
+          "lat": 35.6995011,
+          "lon": 139.7647944
+        },
+        {
+          "lat": 35.6996187,
+          "lon": 139.764298
+        },
+        {
+          "lat": 35.6996333,
+          "lon": 139.7643023
+        },
+        {
+          "lat": 35.6997015,
+          "lon": 139.764013
+        },
+        {
+          "lat": 35.6997907,
+          "lon": 139.7640381
+        },
+        {
+          "lat": 35.6998292,
+          "lon": 139.7638912
+        },
+        {
+          "lat": 35.6997287,
+          "lon": 139.7638427
+        },
+        {
+          "lat": 35.6997479,
+          "lon": 139.7637718
+        },
+        {
+          "lat": 35.6997001,
+          "lon": 139.7637479
+        },
+        {
+          "lat": 35.6997436,
+          "lon": 139.7636052
+        },
+        {
+          "lat": 35.6998815,
+          "lon": 139.7636697
+        },
+        {
+          "lat": 35.6999152,
+          "lon": 139.7636624
+        },
+        {
+          "lat": 35.699949,
+          "lon": 139.7636551
+        },
+        {
+          "lat": 35.6999692,
+          "lon": 139.7636012
+        },
+        {
+          "lat": 35.7000165,
+          "lon": 139.7636277
+        }
+      ],
+      "tags": {
+        "building": "train_station",
+        "building:levels": "3",
+        "building:use": "railway",
+        "layer": "2",
+        "name": "御茶ノ水",
+        "name:en": "Ochanomizu",
+        "name:fr": "Ochanomizu",
+        "name:ja": "御茶ノ水",
+        "name:ja-Hira": "おちゃのみず",
+        "name:ja_rm": "Ochanomizu",
+        "name:ko": "오차노미즈",
+        "name:ru": "Отяномидзу",
+        "roof:shape": "flat",
+        "source": "Bing, 2007-04",
+        "wikipedia": "ja:御茶ノ水駅"
+      }
+    },
+    {
+      "type": "way",
+      "id": 230935836,
+      "bounds": {
+        "minlat": 35.6992402,
+        "minlon": 139.7656985,
+        "maxlat": 35.6994984,
+        "maxlon": 139.7659439
+      },
+      "nodes": [
+        2393625572,
+        7018301696,
+        2393625533,
+        2393625554,
+        2393625559,
+        2393625574,
+        7018301698,
+        2393625538,
+        7871763987,
+        2393625576,
+        7018312837,
+        2393625566,
+        7871763988,
+        2393625572
+      ],
+      "geometry": [
+        {
+          "lat": 35.6994984,
+          "lon": 139.7657578
+        },
+        {
+          "lat": 35.6994822,
+          "lon": 139.7657511
+        },
+        {
+          "lat": 35.699466,
+          "lon": 139.7657443
+        },
+        {
+          "lat": 35.6994337,
+          "lon": 139.765867
+        },
+        {
+          "lat": 35.6993509,
+          "lon": 139.7658355
+        },
+        {
+          "lat": 35.6993851,
+          "lon": 139.7657123
+        },
+        {
+          "lat": 35.6993697,
+          "lon": 139.7657054
+        },
+        {
+          "lat": 35.6993542,
+          "lon": 139.7656985
+        },
+        {
+          "lat": 35.6993242,
+          "lon": 139.7658194
+        },
+        {
+          "lat": 35.6992584,
+          "lon": 139.7657972
+        },
+        {
+          "lat": 35.6992466,
+          "lon": 139.7658365
+        },
+        {
+          "lat": 35.6992402,
+          "lon": 139.7658652
+        },
+        {
+          "lat": 35.6994435,
+          "lon": 139.7659439
+        },
+        {
+          "lat": 35.6994984,
+          "lon": 139.7657578
+        }
+      ],
+      "tags": {
+        "building": "train_station",
+        "building:levels": "2",
+        "building:use": "railway",
+        "layer": "1",
+        "name": "臨時改札口",
+        "name:en": "Provisional ticket gate",
+        "opening_hours:description": "朝ラッシュ時のみ",
+        "operator": "東日本旅客鉄道",
+        "wheelchair": "no"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259236901,
+      "bounds": {
+        "minlat": 35.699245,
+        "minlon": 139.7640357,
+        "maxlat": 35.6997992,
+        "maxlon": 139.7662331
+      },
+      "nodes": [
+        2393625577,
+        2645892506,
+        7871763887,
+        7871763786,
+        2645892490,
+        2645892513,
+        7018301698,
+        7018259229,
+        2393625577
+      ],
+      "geometry": [
+        {
+          "lat": 35.6997605,
+          "lon": 139.7640357
+        },
+        {
+          "lat": 35.6997992,
+          "lon": 139.7640486
+        },
+        {
+          "lat": 35.699573,
+          "lon": 139.7650194
+        },
+        {
+          "lat": 35.6994006,
+          "lon": 139.7657192
+        },
+        {
+          "lat": 35.6992728,
+          "lon": 139.7662331
+        },
+        {
+          "lat": 35.699245,
+          "lon": 139.7662204
+        },
+        {
+          "lat": 35.6993697,
+          "lon": 139.7657054
+        },
+        {
+          "lat": 35.6995712,
+          "lon": 139.7648411
+        },
+        {
+          "lat": 35.6997605,
+          "lon": 139.7640357
+        }
+      ],
+      "tags": {
+        "area": "yes",
+        "bench": "no",
+        "bin": "no",
+        "departures_board": "realtime",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "ref": "2",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "train": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259236902,
+      "bounds": {
+        "minlat": 35.6993472,
+        "minlon": 139.7640752,
+        "maxlat": 35.699909,
+        "maxlon": 139.7662711
+      },
+      "nodes": [
+        2393625537,
+        2645892505,
+        7871763986,
+        7871765185,
+        2645892488,
+        2645892494,
+        7018301696,
+        7018259230,
+        2393625537
+      ],
+      "geometry": [
+        {
+          "lat": 35.6998752,
+          "lon": 139.7640752
+        },
+        {
+          "lat": 35.699909,
+          "lon": 139.7640871
+        },
+        {
+          "lat": 35.6996819,
+          "lon": 139.7650449
+        },
+        {
+          "lat": 35.6995145,
+          "lon": 139.7657646
+        },
+        {
+          "lat": 35.6993736,
+          "lon": 139.7662711
+        },
+        {
+          "lat": 35.6993472,
+          "lon": 139.7662597
+        },
+        {
+          "lat": 35.6994822,
+          "lon": 139.7657511
+        },
+        {
+          "lat": 35.6996874,
+          "lon": 139.7648753
+        },
+        {
+          "lat": 35.6998752,
+          "lon": 139.7640752
+        }
+      ],
+      "tags": {
+        "area": "yes",
+        "bench": "no",
+        "bin": "no",
+        "departures_board": "realtime",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "ref": "4",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "train": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259236903,
+      "bounds": {
+        "minlat": 35.6992172,
+        "minlon": 139.7640229,
+        "maxlat": 35.6997605,
+        "maxlon": 139.7662204
+      },
+      "nodes": [
+        2645892492,
+        2393625577,
+        7018259229,
+        7018301698,
+        2645892513,
+        2645892487,
+        7871765186,
+        7871765485,
+        2645892492
+      ],
+      "geometry": [
+        {
+          "lat": 35.6997218,
+          "lon": 139.7640229
+        },
+        {
+          "lat": 35.6997605,
+          "lon": 139.7640357
+        },
+        {
+          "lat": 35.6995712,
+          "lon": 139.7648411
+        },
+        {
+          "lat": 35.6993697,
+          "lon": 139.7657054
+        },
+        {
+          "lat": 35.699245,
+          "lon": 139.7662204
+        },
+        {
+          "lat": 35.6992172,
+          "lon": 139.7662077
+        },
+        {
+          "lat": 35.6993388,
+          "lon": 139.7656916
+        },
+        {
+          "lat": 35.6994957,
+          "lon": 139.7649872
+        },
+        {
+          "lat": 35.6997218,
+          "lon": 139.7640229
+        }
+      ],
+      "tags": {
+        "area": "yes",
+        "bench": "no",
+        "bin": "no",
+        "departures_board": "realtime",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "ref": "1",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "train": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 259236904,
+      "bounds": {
+        "minlat": 35.6993209,
+        "minlon": 139.7640634,
+        "maxlat": 35.6998752,
+        "maxlon": 139.7662597
+      },
+      "nodes": [
+        2393625537,
+        7018259230,
+        7018301696,
+        2645892494,
+        2645892519,
+        7871765285,
+        2645892491,
+        2645892509,
+        2393625537
+      ],
+      "geometry": [
+        {
+          "lat": 35.6998752,
+          "lon": 139.7640752
+        },
+        {
+          "lat": 35.6996874,
+          "lon": 139.7648753
+        },
+        {
+          "lat": 35.6994822,
+          "lon": 139.7657511
+        },
+        {
+          "lat": 35.6993472,
+          "lon": 139.7662597
+        },
+        {
+          "lat": 35.6993209,
+          "lon": 139.7662483
+        },
+        {
+          "lat": 35.6994499,
+          "lon": 139.7657375
+        },
+        {
+          "lat": 35.6996183,
+          "lon": 139.7650301
+        },
+        {
+          "lat": 35.6998413,
+          "lon": 139.7640634
+        },
+        {
+          "lat": 35.6998752,
+          "lon": 139.7640752
+        }
+      ],
+      "tags": {
+        "area": "yes",
+        "bench": "no",
+        "bin": "no",
+        "departures_board": "realtime",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "ref": "3",
+        "shelter": "yes",
+        "tactile_paving": "yes",
+        "train": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 662223242,
+      "bounds": {
+        "minlat": 35.6962945,
+        "minlon": 139.7651269,
+        "maxlat": 35.6977408,
+        "maxlon": 139.7657922
+      },
+      "nodes": [
+        6199739265,
+        6199739247
+      ],
+      "geometry": [
+        {
+          "lat": 35.6977408,
+          "lon": 139.7657922
+        },
+        {
+          "lat": 35.6962945,
+          "lon": 139.7651269
+        }
+      ],
+      "tags": {
+        "layer": "-2",
+        "level": "-3",
+        "public_transport": "platform",
+        "railway": "platform",
+        "ref": "2",
+        "subway": "yes",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 662223243,
+      "bounds": {
+        "minlat": 35.6962719,
+        "minlon": 139.7652125,
+        "maxlat": 35.6977197,
+        "maxlon": 139.7658594
+      },
+      "nodes": [
+        6199739262,
+        6199739248
+      ],
+      "geometry": [
+        {
+          "lat": 35.6977197,
+          "lon": 139.7658594
+        },
+        {
+          "lat": 35.6962719,
+          "lon": 139.7652125
+        }
+      ],
+      "tags": {
+        "layer": "-3",
+        "level": "-3",
+        "public_transport": "platform",
+        "railway": "platform",
+        "ref": "1",
+        "subway": "yes",
+        "tunnel": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 753523689,
+      "bounds": {
+        "minlat": 35.7004353,
+        "minlon": 139.7634202,
+        "maxlat": 35.7009671,
+        "maxlon": 139.7645536
+      },
+      "nodes": [
+        7040436418,
+        7040436419,
+        7911713323,
+        7911713325,
+        7040436420,
+        7040436421,
+        7911713324,
+        7040436418
+      ],
+      "geometry": [
+        {
+          "lat": 35.7009671,
+          "lon": 139.7634341
+        },
+        {
+          "lat": 35.7009394,
+          "lon": 139.7634202
+        },
+        {
+          "lat": 35.7008462,
+          "lon": 139.7635818
+        },
+        {
+          "lat": 35.7006055,
+          "lon": 139.7641021
+        },
+        {
+          "lat": 35.7004353,
+          "lon": 139.7645397
+        },
+        {
+          "lat": 35.7004631,
+          "lon": 139.7645536
+        },
+        {
+          "lat": 35.7006382,
+          "lon": 139.7641021
+        },
+        {
+          "lat": 35.7009671,
+          "lon": 139.7634341
+        }
+      ],
+      "tags": {
+        "area": "yes",
+        "departures_board": "realtime",
+        "indoor": "area",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "subway": "yes",
+        "surface": "asphalt"
+      }
+    },
+    {
+      "type": "way",
+      "id": 753523690,
+      "bounds": {
+        "minlat": 35.7003479,
+        "minlon": 139.7633547,
+        "maxlat": 35.7008863,
+        "maxlon": 139.7645095
+      },
+      "nodes": [
+        7040436422,
+        7040436423,
+        7911713327,
+        7040436424,
+        7040436425,
+        7911713326,
+        7911713322,
+        7040436422
+      ],
+      "geometry": [
+        {
+          "lat": 35.7008863,
+          "lon": 139.7633686
+        },
+        {
+          "lat": 35.7008585,
+          "lon": 139.7633547
+        },
+        {
+          "lat": 35.7005075,
+          "lon": 139.7640592
+        },
+        {
+          "lat": 35.7003479,
+          "lon": 139.7644956
+        },
+        {
+          "lat": 35.7003757,
+          "lon": 139.7645095
+        },
+        {
+          "lat": 35.7005369,
+          "lon": 139.7640686
+        },
+        {
+          "lat": 35.7007841,
+          "lon": 139.7635563
+        },
+        {
+          "lat": 35.7008863,
+          "lon": 139.7633686
+        }
+      ],
+      "tags": {
+        "area": "yes",
+        "departures_board": "realtime",
+        "indoor": "area",
+        "layer": "-1",
+        "level": "-1",
+        "lit": "yes",
+        "public_transport": "platform",
+        "railway": "platform",
+        "subway": "yes",
+        "surface": "asphalt"
+      }
+    }
+  ],
+  "pois": [
+    {
+      "type": "node",
+      "id": 1130530506,
+      "lat": 35.7016017,
+      "lon": 139.766204,
+      "tags": {
+        "amenity": "college",
+        "education": "college",
+        "name": "御茶ノ水 鍼灸専門学校",
+        "name:en": "Ochanimizu Acupuncture College",
+        "name:ja": "御茶ノ水 鍼灸専門学校"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420766935,
+      "lat": 35.698402,
+      "lon": 139.762933,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "佐々木研究所附属杏雲堂病院",
+        "name:en": "Kyoundo Hospital",
+        "name:es": "Hospital Kyoundo",
+        "name:ja": "佐々木研究所附属杏雲堂病院",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420771222,
+      "lat": 35.697486,
+      "lon": 139.766294,
+      "tags": {
+        "addr:full": "東京都千代田区神田駿河台4-2",
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "名倉クリニック",
+        "name:en": "Nagura Clinic",
+        "name:es": "Clínica Nagura",
+        "name:ja": "名倉クリニック",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "operator:type": "private",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420781044,
+      "lat": 35.6976834,
+      "lon": 139.7647246,
+      "tags": {
+        "amenity": "university",
+        "education": "university",
+        "name": "日本大学（理工学部）駿河台校舎",
+        "name:en": "College of Science and Technology, Nihon University, Surugadai Campus",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420781347,
+      "lat": 35.6986987,
+      "lon": 139.7621517,
+      "tags": {
+        "addr:block_number": "1",
+        "addr:city": "千代田区",
+        "addr:neighbourhood": "神田駿河台一丁目",
+        "addr:province": "東京都",
+        "contact:facebook": "https://www.facebook.com/meijimuseum/",
+        "contact:instagram": "https://www.instagram.com/meijimuseum/",
+        "contact:twitter": "https://x.com/meiji_museum",
+        "fee": "no",
+        "layer": "-1",
+        "museum": "education;history",
+        "name": "明治大学博物館",
+        "name:en": "Meiji University Museum",
+        "name:es": "Museo de la Universidad Meiji",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "opening_hours": "Mo-Su 10:00-16:30",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+        "tourism": "museum",
+        "website": "https://www.meiji.ac.jp/museum/",
+        "wikidata": "Q85880847",
+        "wikipedia": "ja:明治大学博物館"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420781349,
+      "lat": 35.698451,
+      "lon": 139.762158,
+      "tags": {
+        "addr:full": "東京都千代田区神田駿河台1-1",
+        "amenity": "university",
+        "education": "university",
+        "name": "明治大学（商学部）",
+        "name:en": "Meiji University",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "operator:type": "private",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420781350,
+      "lat": 35.6984381,
+      "lon": 139.7621985,
+      "tags": {
+        "amenity": "university",
+        "education": "university",
+        "name": "明治大学（情報コミュニケーション学部）",
+        "name:en": "Meiji University",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420781351,
+      "lat": 35.69847,
+      "lon": 139.762118,
+      "tags": {
+        "addr:full": "東京都千代田区神田駿河台1-1",
+        "amenity": "university",
+        "education": "university",
+        "name": "明治大学（政治経済学部）",
+        "name:en": "Meiji University",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "operator:type": "private",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420781352,
+      "lat": 35.69847,
+      "lon": 139.762198,
+      "tags": {
+        "addr:full": "東京都千代田区神田駿河台1-1",
+        "amenity": "university",
+        "education": "university",
+        "name": "明治大学（文学部）",
+        "name:en": "Meiji University",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "operator:type": "private",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420781353,
+      "lat": 35.698438,
+      "lon": 139.762118,
+      "tags": {
+        "addr:full": "東京都千代田区神田駿河台1-1",
+        "amenity": "university",
+        "education": "university",
+        "name": "明治大学（法学部）",
+        "name:en": "Meiji University",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "operator:type": "private",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420781354,
+      "lat": 35.698421,
+      "lon": 139.762158,
+      "tags": {
+        "addr:full": "東京都千代田区神田駿河台1-1",
+        "amenity": "university",
+        "education": "university",
+        "name": "明治大学（経営学部）",
+        "name:en": "Meiji University",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "operator:type": "private",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420782890,
+      "lat": 35.7010409,
+      "lon": 139.7641648,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "name": "東京科学大学病院",
+        "name:en": "Institute of Science Tokyo Hospital",
+        "name:ja": "東京科学大学病院",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+        "old_name": "東京医科歯科大学病院",
+        "old_name:en": "Tokyo Medical and Dental University Hospital",
+        "old_name:ja": "東京医科歯科大学病院",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+        "wheelchair": "yes",
+        "wikidata": "Q130394004",
+        "wikipedia": "ja:東京医科歯科大学病院"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420782910,
+      "lat": 35.701863,
+      "lon": 139.764132,
+      "tags": {
+        "addr:full": "東京都文京区湯島1-5-45",
+        "amenity": "university",
+        "building": "school",
+        "education": "university",
+        "name": "東京科学大学（医学部）",
+        "name:en": "Faculty of Medicine",
+        "name:ja": "東京科学大学（医学部）",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年 国土交通省",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 1420782919,
+      "lat": 35.7009614,
+      "lon": 139.7648143,
+      "tags": {
+        "amenity": "university",
+        "building": "school",
+        "education": "university",
+        "name": "東京科学大学（歯学部）",
+        "name:en": "Faculty of Dentistry",
+        "name:ja": "東京科学大学（歯学部）",
+        "note": "National-Land Numerical Information (Public Facility) 2006, MLIT Japan",
+        "note:ja": "国土数値情報（公共施設データ）平成19年　国土交通省",
+        "source": "KSJ2",
+        "source_ref": "http://nlftp.mlit.go.jp/ksj/jpgis/datalist/KsjTmplt-P02-v2_0.html"
+      }
+    },
+    {
+      "type": "node",
+      "id": 2204921527,
+      "lat": 35.69826,
+      "lon": 139.7634569,
+      "tags": {
+        "amenity": "hospital",
+        "healthcare": "hospital",
+        "healthcare:speciality": "dentistry",
+        "name": "日本大学歯学部付属歯科病院",
+        "name:en": "Nihon University School of Dentistry Dental Hospital",
+        "wheelchair": "yes",
+        "wikidata": "Q11507855",
+        "wikimedia_commons": "Category:Nihon University School of Dentistry Dental Hospital",
+        "wikipedia": "ja:日本大学歯学部付属歯科病院"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3160434577,
+      "lat": 35.6998838,
+      "lon": 139.7632085,
+      "tags": {
+        "historic": "memorial",
+        "name": "お茶の水碑"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3160436370,
+      "lat": 35.700448,
+      "lon": 139.765464,
+      "tags": {
+        "historic": "memorial",
+        "memorial": "plaque",
+        "name": "近代教育発祥の碑",
+        "name:en": "Birth Place of Modern Education",
+        "name:ja": "近代教育発祥の碑"
+      }
+    },
+    {
+      "type": "node",
+      "id": 3888596381,
+      "lat": 35.6977339,
+      "lon": 139.7625607,
+      "tags": {
+        "historic": "building",
+        "name": "小栗上野介屋敷跡",
+        "name:en": "Kozukenosuke Oguri mansion trace (place of birth)"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4059137885,
+      "lat": 35.698663,
+      "lon": 139.7628413,
+      "tags": {
+        "historic": "memorial",
+        "memorial": "bust",
+        "name": "法政大学発祥の地碑",
+        "name:en": "Hosei University birthplace",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4315444329,
+      "lat": 35.6989496,
+      "lon": 139.766004,
+      "tags": {
+        "brand": "成城石井",
+        "brand:en": "Seijo Ishii",
+        "brand:ja": "成城石井",
+        "brand:wikidata": "Q11495410",
+        "brand:wikipedia": "ja:成城石井",
+        "level": "-1",
+        "name": "成城石井",
+        "name:en": "Seijo Ishii",
+        "name:ja": "成城石井",
+        "opening_hours": "07:30-23:00",
+        "shop": "supermarket",
+        "source": "survey",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4970007440,
+      "lat": 35.7002338,
+      "lon": 139.7654355,
+      "tags": {
+        "historic": "memorial",
+        "material": "stone",
+        "memorial": "stele",
+        "name": "聖橋の由来",
+        "operator": "東京都交通局",
+        "source": "survey",
+        "start_date": "1992-03"
+      }
+    },
+    {
+      "type": "node",
+      "id": 4999139710,
+      "lat": 35.699909,
+      "lon": 139.768037,
+      "tags": {
+        "leisure": "sports_centre",
+        "level": "0",
+        "name": "B-PUMP",
+        "shop": "sports",
+        "source": "survey",
+        "sport": "climbing"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5481946623,
+      "lat": 35.6976659,
+      "lon": 139.7642775,
+      "tags": {
+        "amenity": "college",
+        "education": "college",
+        "name": "中央大学駿河台記念館",
+        "name:en": "Chuo University"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5492473553,
+      "lat": 35.6982786,
+      "lon": 139.7649872,
+      "tags": {
+        "archaeological_site": "petroglyph",
+        "description": "几号水準点",
+        "historic": "archaeological_site",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5500138988,
+      "lat": 35.7006543,
+      "lon": 139.7641041,
+      "tags": {
+        "historic": "memorial",
+        "name": "お茶の水貝塚"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5615113577,
+      "lat": 35.6997461,
+      "lon": 139.7630389,
+      "tags": {
+        "amenity": "college",
+        "education": "college",
+        "name": "UTB映像アカデミー",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 5615113578,
+      "lat": 35.6997288,
+      "lon": 139.7630341,
+      "tags": {
+        "amenity": "college",
+        "education": "college",
+        "name": "ESPギター・クラフト・アカデミー",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6150699512,
+      "lat": 35.7014072,
+      "lon": 139.7641783,
+      "tags": {
+        "artwork_type": "bust",
+        "name": "ヒポクラテス",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6153432710,
+      "lat": 35.6996072,
+      "lon": 139.7676351,
+      "tags": {
+        "amenity": "college",
+        "education": "college",
+        "name": "AMAZING SCHOOL JUR",
+        "source": "survey"
+      }
+    },
+    {
+      "type": "node",
+      "id": 6794616326,
+      "lat": 35.6990879,
+      "lon": 139.7622081,
+      "tags": {
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10185361577,
+      "lat": 35.6988686,
+      "lon": 139.7625954,
+      "tags": {
+        "historic": "milestone",
+        "inscription": "雁木坂;昭和五十年一月駿河台西町会",
+        "name": "雁木坂"
+      }
+    },
+    {
+      "type": "node",
+      "id": 10761236505,
+      "lat": 35.6980586,
+      "lon": 139.7657773,
+      "tags": {
+        "amenity": "place_of_worship",
+        "name:en": "Nikolay Do"
+      }
+    },
+    {
+      "type": "node",
+      "id": 11890802484,
+      "lat": 35.6997471,
+      "lon": 139.7656317,
+      "tags": {
+        "name:en": "Multiple train tracks view",
+        "name:fr": "Vue sur plusieurs lignes de train",
+        "tourism": "viewpoint"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12761754474,
+      "lat": 35.6986102,
+      "lon": 139.7635689,
+      "tags": {
+        "artwork_type": "bust",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12761754477,
+      "lat": 35.6987778,
+      "lon": 139.7640063,
+      "tags": {
+        "historic": "wayside_shrine"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12797278431,
+      "lat": 35.6971943,
+      "lon": 139.7652752,
+      "tags": {
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 12797278443,
+      "lat": 35.6971395,
+      "lon": 139.7657129,
+      "tags": {
+        "artwork_type": "sculpture",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 13074874941,
+      "lat": 35.698318,
+      "lon": 139.7624652,
+      "tags": {
+        "name": "Dr.Ochanomizu Manhole Cover",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14028297142,
+      "lat": 35.6980644,
+      "lon": 139.7641997,
+      "tags": {
+        "artwork_type": "bust",
+        "tourism": "artwork"
+      }
+    },
+    {
+      "type": "node",
+      "id": 14030059807,
+      "lat": 35.6995418,
+      "lon": 139.763021,
+      "tags": {
+        "leisure": "sports_centre",
+        "level": "5",
+        "name": "H&S Golf School",
+        "sport": "golf"
+      }
+    },
+    {
+      "type": "way",
+      "id": 46985717,
+      "bounds": {
+        "minlat": 35.6997091,
+        "minlon": 139.7656999,
+        "maxlat": 35.7011408,
+        "maxlon": 139.7674165
+      },
+      "nodes": [
+        599537661,
+        599537662,
+        2385272721,
+        2385272719,
+        599537663,
+        5326377133,
+        5326377136,
+        1381920157,
+        1381920158,
+        1381920159,
+        1381920160,
+        1381920161,
+        1381920162,
+        1381920163,
+        2385272722,
+        599537661
+      ],
+      "geometry": [
+        {
+          "lat": 35.7004853,
+          "lon": 139.7674165
+        },
+        {
+          "lat": 35.6997091,
+          "lon": 139.7670174
+        },
+        {
+          "lat": 35.69983,
+          "lon": 139.7666539
+        },
+        {
+          "lat": 35.7001292,
+          "lon": 139.7656999
+        },
+        {
+          "lat": 35.7002268,
+          "lon": 139.7657293
+        },
+        {
+          "lat": 35.7003151,
+          "lon": 139.7657693
+        },
+        {
+          "lat": 35.7006647,
+          "lon": 139.7659276
+        },
+        {
+          "lat": 35.7007695,
+          "lon": 139.7659747
+        },
+        {
+          "lat": 35.7007726,
+          "lon": 139.7660302
+        },
+        {
+          "lat": 35.70098,
+          "lon": 139.76617
+        },
+        {
+          "lat": 35.7010521,
+          "lon": 139.7662921
+        },
+        {
+          "lat": 35.7010987,
+          "lon": 139.7663866
+        },
+        {
+          "lat": 35.7010842,
+          "lon": 139.7664182
+        },
+        {
+          "lat": 35.7011408,
+          "lon": 139.766467
+        },
+        {
+          "lat": 35.7007106,
+          "lon": 139.7671188
+        },
+        {
+          "lat": 35.7004853,
+          "lon": 139.7674165
+        }
+      ],
+      "tags": {
+        "addr:block_number": "4",
+        "addr:city": "文京区",
+        "addr:housenumber": "19",
+        "addr:neighbourhood": "1丁目",
+        "addr:province": "東京都",
+        "addr:quarter": "湯島",
+        "amenity": "place_of_worship",
+        "landuse": "religious",
+        "name": "湯島聖堂",
+        "name:en": "Yushimaseido Temple",
+        "name:es": "Templo Yushimaseido",
+        "name:ja": "湯島聖堂",
+        "name:ja_rm": "Yushima Seidō",
+        "name:ko": "유시마세이도",
+        "name:zh": "湯島聖堂",
+        "religion": "confucian",
+        "website": "http://www.seido.or.jp/",
+        "wikidata": "Q1760591",
+        "wikipedia": "ja:湯島聖堂"
+      }
+    },
+    {
+      "type": "way",
+      "id": 52980054,
+      "bounds": {
+        "minlat": 35.7002809,
+        "minlon": 139.7626638,
+        "maxlat": 35.7027106,
+        "maxlon": 139.7659123
+      },
+      "nodes": [
+        671196182,
+        5432556090,
+        4970007436,
+        6257901199,
+        671196184,
+        6257901200,
+        4952171653,
+        4952171654,
+        671196193,
+        671196195,
+        671196197,
+        671196198,
+        1919930034,
+        1919930033,
+        671196199,
+        6337023563,
+        4952171656,
+        4952171655,
+        671196182
+      ],
+      "geometry": [
+        {
+          "lat": 35.701366,
+          "lon": 139.7659123
+        },
+        {
+          "lat": 35.7011058,
+          "lon": 139.765793
+        },
+        {
+          "lat": 35.7006941,
+          "lon": 139.7656041
+        },
+        {
+          "lat": 35.7004259,
+          "lon": 139.7654739
+        },
+        {
+          "lat": 35.7004752,
+          "lon": 139.7653266
+        },
+        {
+          "lat": 35.7002809,
+          "lon": 139.7652198
+        },
+        {
+          "lat": 35.7006891,
+          "lon": 139.7640223
+        },
+        {
+          "lat": 35.7007939,
+          "lon": 139.7637394
+        },
+        {
+          "lat": 35.7009744,
+          "lon": 139.763251
+        },
+        {
+          "lat": 35.7016642,
+          "lon": 139.7626638
+        },
+        {
+          "lat": 35.7017077,
+          "lon": 139.7626733
+        },
+        {
+          "lat": 35.7023732,
+          "lon": 139.7631177
+        },
+        {
+          "lat": 35.7022355,
+          "lon": 139.7633568
+        },
+        {
+          "lat": 35.7022226,
+          "lon": 139.763384
+        },
+        {
+          "lat": 35.7027106,
+          "lon": 139.7638792
+        },
+        {
+          "lat": 35.7026576,
+          "lon": 139.7639576
+        },
+        {
+          "lat": 35.7021858,
+          "lon": 139.7646697
+        },
+        {
+          "lat": 35.7018343,
+          "lon": 139.7651963
+        },
+        {
+          "lat": 35.701366,
+          "lon": 139.7659123
+        }
+      ],
+      "tags": {
+        "amenity": "university",
+        "education": "university",
+        "name": "東京科学大学 湯島キャンパス",
+        "name:en": "Institute of Science Tokyo - Yushima Campus",
+        "name:ja": "東京科学大学 湯島キャンパス",
+        "old_name": "東京医科歯科大学 湯島キャンパス",
+        "old_name:en": "Tokyo Medical and Dental University - Yushima Campus",
+        "old_name:ja": "東京医科歯科大学 湯島キャンパス",
+        "website": "https://www.isct.ac.jp/",
+        "wikidata": "Q116264906",
+        "wikipedia": "ja:東京科学大学"
+      }
+    },
+    {
+      "type": "way",
+      "id": 67027571,
+      "bounds": {
+        "minlat": 35.6981719,
+        "minlon": 139.7626841,
+        "maxlat": 35.6985972,
+        "maxlon": 139.7632076
+      },
+      "nodes": [
+        810027499,
+        810027454,
+        810027529,
+        810027485,
+        12761754476,
+        810027499
+      ],
+      "geometry": [
+        {
+          "lat": 35.6985972,
+          "lon": 139.7628423
+        },
+        {
+          "lat": 35.6983004,
+          "lon": 139.7626841
+        },
+        {
+          "lat": 35.6981719,
+          "lon": 139.7630494
+        },
+        {
+          "lat": 35.6984687,
+          "lon": 139.7632076
+        },
+        {
+          "lat": 35.6985357,
+          "lon": 139.7630171
+        },
+        {
+          "lat": 35.6985972,
+          "lon": 139.7628423
+        }
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "hospital",
+        "building:levels": "9",
+        "healthcare": "hospital",
+        "height": "35",
+        "name": "杏雲堂病院",
+        "name:en": "Kyoundo Hospital",
+        "name:es": "Hospital Kyoundo",
+        "name:ja": "杏雲堂病院",
+        "wheelchair": "yes"
+      }
+    },
+    {
+      "type": "way",
+      "id": 124081178,
+      "bounds": {
+        "minlat": 35.7007695,
+        "minlon": 139.7659747,
+        "maxlat": 35.7012326,
+        "maxlon": 139.766467
+      },
+      "nodes": [
+        1381920157,
+        1381920158,
+        1381920159,
+        1381920160,
+        1381920161,
+        1381920162,
+        1381920163,
+        5432833573,
+        1381920164,
+        2392663551,
+        5432833571,
+        5303109411,
+        1381920157
+      ],
+      "geometry": [
+        {
+          "lat": 35.7007695,
+          "lon": 139.7659747
+        },
+        {
+          "lat": 35.7007726,
+          "lon": 139.7660302
+        },
+        {
+          "lat": 35.70098,
+          "lon": 139.76617
+        },
+        {
+          "lat": 35.7010521,
+          "lon": 139.7662921
+        },
+        {
+          "lat": 35.7010987,
+          "lon": 139.7663866
+        },
+        {
+          "lat": 35.7010842,
+          "lon": 139.7664182
+        },
+        {
+          "lat": 35.7011408,
+          "lon": 139.766467
+        },
+        {
+          "lat": 35.7011809,
+          "lon": 139.766396
+        },
+        {
+          "lat": 35.7012326,
+          "lon": 139.7663043
+        },
+        {
+          "lat": 35.7011943,
+          "lon": 139.7661595
+        },
+        {
+          "lat": 35.7011102,
+          "lon": 139.7661229
+        },
+        {
+          "lat": 35.7008079,
+          "lon": 139.7659914
+        },
+        {
+          "lat": 35.7007695,
+          "lon": 139.7659747
+        }
+      ],
+      "tags": {
+        "addr:block_number": "4",
+        "addr:neighbourhood": "1",
+        "addr:quarter": "湯島",
+        "leisure": "park",
+        "name": "お茶の水公園",
+        "name:en": "Ochanomizu Park",
+        "name:ja": "お茶の水公園",
+        "name:ja_rm": "Ochanomizu Kōen"
+      }
+    },
+    {
+      "type": "way",
+      "id": 170401316,
+      "bounds": {
+        "minlat": 35.6992692,
+        "minlon": 139.7672691,
+        "maxlat": 35.6994311,
+        "maxlon": 139.7674695
+      },
+      "nodes": [
+        1815436218,
+        1815436207,
+        1815436211,
+        1815436222,
+        6155923688,
+        1815436218
+      ],
+      "geometry": [
+        {
+          "lat": 35.6993783,
+          "lon": 139.7674695
+        },
+        {
+          "lat": 35.6992692,
+          "lon": 139.7674053
+        },
+        {
+          "lat": 35.699322,
+          "lon": 139.7672691
+        },
+        {
+          "lat": 35.6994311,
+          "lon": 139.7673333
+        },
+        {
+          "lat": 35.6993974,
+          "lon": 139.7674204
+        },
+        {
+          "lat": 35.6993783,
+          "lon": 139.7674695
+        }
+      ],
+      "tags": {
+        "building": "yes",
+        "building:levels": "2",
+        "check_date": "2025-06-26",
+        "leisure": "sports_centre",
+        "name": "淡路亭",
+        "name:en": "Awajitei",
+        "source": "image;Bing,2007-04",
+        "sport": "billiards"
+      }
+    },
+    {
+      "type": "way",
+      "id": 171480310,
+      "bounds": {
+        "minlat": 35.6989709,
+        "minlon": 139.7618622,
+        "maxlat": 35.6995665,
+        "maxlon": 139.7625518
+      },
+      "nodes": [
+        1825027644,
+        3483952500,
+        3483951581,
+        3483951591,
+        1825027628,
+        1825027620,
+        3483951585,
+        3483951578,
+        1825027624,
+        1825027644
+      ],
+      "geometry": [
+        {
+          "lat": 35.6995665,
+          "lon": 139.7620762
+        },
+        {
+          "lat": 35.6994972,
+          "lon": 139.7622785
+        },
+        {
+          "lat": 35.6994608,
+          "lon": 139.7623845
+        },
+        {
+          "lat": 35.6994895,
+          "lon": 139.7623994
+        },
+        {
+          "lat": 35.6994373,
+          "lon": 139.7625518
+        },
+        {
+          "lat": 35.6991112,
+          "lon": 139.7623823
+        },
+        {
+          "lat": 35.6990854,
+          "lon": 139.7624578
+        },
+        {
+          "lat": 35.6989709,
+          "lon": 139.7623983
+        },
+        {
+          "lat": 35.6991547,
+          "lon": 139.7618622
+        },
+        {
+          "lat": 35.6995665,
+          "lon": 139.7620762
+        }
+      ],
+      "tags": {
+        "amenity": "university",
+        "building": "yes",
+        "education": "university",
+        "name": "明治大学 グローバルフロント",
+        "name:en": "Meiji University Global Front",
+        "name:es": "Universidad University, frente global",
+        "name:ja": "明治大学 グローバルフロント",
+        "source": "Bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 210425258,
+      "bounds": {
+        "minlat": 35.6983419,
+        "minlon": 139.7639994,
+        "maxlat": 35.6985587,
+        "maxlon": 139.7642606
+      },
+      "nodes": [
+        2204921529,
+        2204921524,
+        2204921541,
+        2204921548,
+        2204921529
+      ],
+      "geometry": [
+        {
+          "lat": 35.6984032,
+          "lon": 139.7639994
+        },
+        {
+          "lat": 35.6983419,
+          "lon": 139.764181
+        },
+        {
+          "lat": 35.6984973,
+          "lon": 139.7642606
+        },
+        {
+          "lat": 35.6985587,
+          "lon": 139.7640789
+        },
+        {
+          "lat": 35.6984032,
+          "lon": 139.7639994
+        }
+      ],
+      "tags": {
+        "addr:block_number": "12",
+        "amenity": "university",
+        "building": "yes",
+        "education": "university",
+        "name": "日本大学歯学部",
+        "name:en": "Nihon University School of Dentistry",
+        "name:ja": "日本大学歯学部",
+        "source": "bing"
+      }
+    },
+    {
+      "type": "way",
+      "id": 219877271,
+      "bounds": {
+        "minlat": 35.6970766,
+        "minlon": 139.7622382,
+        "maxlat": 35.6976421,
+        "maxlon": 139.763101
+      },
+      "nodes": [
+        2290096316,
+        2290096300,
+        2290096298,
+        2290096292,
+        2290096316
+      ],
+      "geometry": [
+        {
+          "lat": 35.6976421,
+          "lon": 139.7624137
+        },
+        {
+          "lat": 35.6973394,
+          "lon": 139.7622382
+        },
+        {
+          "lat": 35.6970766,
+          "lon": 139.7629255
+        },
+        {
+          "lat": 35.6973793,
+          "lon": 139.763101
+        },
+        {
+          "lat": 35.6976421,
+          "lon": 139.7624137
+        }
+      ],
+      "tags": {
+        "amenity": "hospital",
+        "building": "yes",
+        "emergency": "yes",
+        "healthcare": "hospital",
+        "name": "日本大学病院",
+        "name:de": "Nihon Universitätsklinikum",
+        "name:en": "Nihon University Hospital",
+        "name:es": "Hospital de la universidad Nihon",
+        "operator": "日本大学",
+        "phone": "+81 3 3293 1711",
+        "source": "knowledge",
+        "website": "https://www.nihon-u.ac.jp/hospital/",
+        "wheelchair": "yes",
+        "wikidata": "Q11668487"
+      }
+    },
+    {
+      "type": "way",
+      "id": 332338650,
+      "bounds": {
+        "minlat": 35.6968856,
+        "minlon": 139.7664802,
+        "maxlat": 35.6974349,
+        "maxlon": 139.767561
+      },
+      "nodes": [
+        3394536051,
+        3394536048,
+        3394536047,
+        7956219951,
+        7956219952,
+        7956219953,
+        7956219954,
+        3394536042,
+        3394536043,
+        4414289833,
+        3394536044,
+        4414289834,
+        3394536045,
+        3394536046,
+        4414289835,
+        3394536049,
+        4414289832,
+        4414289831,
+        3394536051
+      ],
+      "geometry": [
+        {
+          "lat": 35.6974049,
+          "lon": 139.7666161
+        },
+        {
+          "lat": 35.6974005,
+          "lon": 139.766559
+        },
+        {
+          "lat": 35.6972637,
+          "lon": 139.7664802
+        },
+        {
+          "lat": 35.6972456,
+          "lon": 139.7665293
+        },
+        {
+          "lat": 35.6971764,
+          "lon": 139.7667168
+        },
+        {
+          "lat": 35.6971642,
+          "lon": 139.7667499
+        },
+        {
+          "lat": 35.6971048,
+          "lon": 139.766911
+        },
+        {
+          "lat": 35.6968856,
+          "lon": 139.767505
+        },
+        {
+          "lat": 35.6968994,
+          "lon": 139.7675445
+        },
+        {
+          "lat": 35.6969261,
+          "lon": 139.767561
+        },
+        {
+          "lat": 35.6969574,
+          "lon": 139.7675608
+        },
+        {
+          "lat": 35.697005,
+          "lon": 139.7675393
+        },
+        {
+          "lat": 35.6970558,
+          "lon": 139.7675026
+        },
+        {
+          "lat": 35.697124,
+          "lon": 139.7674348
+        },
+        {
+          "lat": 35.6971746,
+          "lon": 139.7673397
+        },
+        {
+          "lat": 35.69722,
+          "lon": 139.7672287
+        },
+        {
+          "lat": 35.6974349,
+          "lon": 139.766672
+        },
+        {
+          "lat": 35.697414,
+          "lon": 139.7666417
+        },
+        {
+          "lat": 35.6974049,
+          "lon": 139.7666161
+        }
+      ],
+      "tags": {
+        "leisure": "park",
+        "name": "淡路公園",
+        "name:en": "Awaji Pocket Park",
+        "name:es": "Awaji Pocket Park",
+        "name:ja": "淡路公園",
+        "wikidata": "Q42311503",
+        "wikimedia_commons": "Category:Awaji Park (Chiyoda, Tokyo)",
+        "wikipedia": "ja:淡路公園"
+      }
+    },
+    {
+      "type": "way",
+      "id": 443912175,
+      "bounds": {
+        "minlat": 35.6983341,
+        "minlon": 139.7671401,
+        "maxlat": 35.6984056,
+        "maxlon": 139.7672099
+      },
+      "nodes": [
+        4414289837,
+        4414289838,
+        4414289839,
+        4414289840,
+        4414289837
+      ],
+      "geometry": [
+        {
+          "lat": 35.6984056,
+          "lon": 139.7671655
+        },
+        {
+          "lat": 35.6983467,
+          "lon": 139.7671401
+        },
+        {
+          "lat": 35.6983341,
+          "lon": 139.7671845
+        },
+        {
+          "lat": 35.6983929,
+          "lon": 139.7672099
+        },
+        {
+          "lat": 35.6984056,
+          "lon": 139.7671655
+        }
+      ],
+      "tags": {
+        "building": "yes",
+        "name": "Gallery 蔵",
+        "tourism": "gallery"
+      }
+    },
+    {
+      "type": "way",
+      "id": 676718846,
+      "bounds": {
+        "minlat": 35.7009601,
+        "minlon": 139.7629804,
+        "maxlat": 35.7015514,
+        "maxlon": 139.7639234
+      },
+      "nodes": [
+        6337023562,
+        6337023554,
+        6337023561,
+        6337023560,
+        6337023559,
+        6337023558,
+        6337023557,
+        6337023562
+      ],
+      "geometry": [
+        {
+          "lat": 35.7015514,
+          "lon": 139.763074
+        },
+        {
+          "lat": 35.701278,
+          "lon": 139.7638329
+        },
+        {
+          "lat": 35.7012454,
+          "lon": 139.7639234
+        },
+        {
+          "lat": 35.7009601,
+          "lon": 139.7637744
+        },
+        {
+          "lat": 35.7011555,
+          "lon": 139.763223
+        },
+        {
+          "lat": 35.7012765,
+          "lon": 139.7630762
+        },
+        {
+          "lat": 35.7013992,
+          "lon": 139.7629804
+        },
+        {
+          "lat": 35.7015514,
+          "lon": 139.763074
+        }
+      ],
+      "tags": {
+        "layer": "1",
+        "leisure": "garden"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1044128868,
+      "bounds": {
+        "minlat": 35.6982832,
+        "minlon": 139.7662148,
+        "maxlat": 35.6989019,
+        "maxlon": 139.7672498
+      },
+      "nodes": [
+        3959098885,
+        2400050916,
+        2400050894,
+        2400050922,
+        3959098885
+      ],
+      "geometry": [
+        {
+          "lat": 35.6989019,
+          "lon": 139.7663728
+        },
+        {
+          "lat": 35.698527,
+          "lon": 139.7662148
+        },
+        {
+          "lat": 35.6982832,
+          "lon": 139.7670918
+        },
+        {
+          "lat": 35.698658,
+          "lon": 139.7672498
+        },
+        {
+          "lat": 35.6989019,
+          "lon": 139.7663728
+        }
+      ],
+      "tags": {
+        "addr:block_number": "6",
+        "addr:city": "千代田区",
+        "addr:housenumber": "御茶ノ水ソラシティ アカデミア 3F/4F",
+        "addr:neighbourhood": "4丁目",
+        "addr:postcode": "101-0062",
+        "addr:province": "東京都",
+        "addr:quarter": "神田駿河台",
+        "amenity": "university",
+        "education": "university",
+        "name": "デジタルハリウッド大学 駿河台キャンパス",
+        "operator": "デジタルハリウッド大学",
+        "operator:type": "university",
+        "website": "https://www.dhw.ac.jp/"
+      }
+    },
+    {
+      "type": "way",
+      "id": 1383403061,
+      "bounds": {
+        "minlat": 35.7002211,
+        "minlon": 139.7618973,
+        "maxlat": 35.7006371,
+        "maxlon": 139.762404
+      },
+      "nodes": [
+        12807884604,
+        822598674,
+        12807884603,
+        12807884602,
+        12807884604
+      ],
+      "geometry": [
+        {
+          "lat": 35.700343,
+          "lon": 139.7618973
+        },
+        {
+          "lat": 35.7006371,
+          "lon": 139.7620516
+        },
+        {
+          "lat": 35.7005152,
+          "lon": 139.762404
+        },
+        {
+          "lat": 35.7002211,
+          "lon": 139.7622498
+        },
+        {
+          "lat": 35.700343,
+          "lon": 139.7618973
+        }
+      ],
+      "tags": {
+        "addr:block_number": "2",
+        "addr:city": "千代田区",
+        "addr:housenumber": "3",
+        "addr:neighbourhood": "神田駿河台二丁目",
+        "addr:province": "東京都",
+        "amenity": "college",
+        "education": "college",
+        "name": "御茶の水美術専門学校",
+        "name:en": "Ochabi Institute",
+        "name:ja": "御茶の水美術専門学校",
+        "website": "https://senmon.ochabi.ac.jp",
+        "wikidata": "Q11489297",
+        "wikipedia": "ja:御茶の水美術専門学校"
+      }
+    }
+  ]
+}

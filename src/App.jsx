@@ -33,9 +33,6 @@ function App() {
   return (
     <div className="app">
       <Logo />
-      <div className="app-databadge">
-        Real Overpass data (3 stations) — station list is a manual stand-in until ODPT access lands
-      </div>
       <main className="app-main">
         <div className="app-search-group">
           <StationPicker selectedStation={station} onSelect={handleSelectStation} />

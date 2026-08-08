@@ -1,17 +1,5 @@
 @import './styles/tokens.css';
 
-/* Self-hosted, kerning-tuned fork of Google's DotGothic16 (SIL OFL) — also
-   covers Japanese glyphs, needed for station name_ja display later. */
-@font-face {
-  font-family: 'DotGothic16';
-  src:
-    url('/fonts/DotGothic16-Modified.woff2') format('woff2'),
-    url('/fonts/DotGothic16-Modified.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
 * {
   box-sizing: border-box;
 }

@@ -26,9 +26,11 @@
   --color-danger: #ff4d4d;
   --color-success: #4dff88;
 
-  /* -- type: single custom dot-matrix font (display + body + ja glyphs) -- */
-  --font-display: 'DotGothic16', system-ui, sans-serif;
-  --font-body: 'DotGothic16', system-ui, sans-serif;
+  /* -- type: Frutiger-lookalike for English, Shin Go-lookalike for Japanese
+     (both are commercial fonts we don't hold a license for — see CLAUDE.md) -- */
+  --font-display: 'Fira Sans', system-ui, sans-serif;
+  --font-body: 'Fira Sans', system-ui, sans-serif;
+  --font-ja: 'Noto Sans JP', 'Fira Sans', system-ui, sans-serif;
 
   /* -- spacing / radii: deliberately blocky, no soft corners -- */
   --radius-sm: 2px;

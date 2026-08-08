@@ -136,3 +136,7 @@
 .exit-card--low-priority.exit-card--selected {
   border-color: var(--color-sign-yellow-dim);
 }
+
+.exit-card--low-priority .exit-card-trigger {
+  padding-top: var(--space-3);
+}

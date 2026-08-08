@@ -41,7 +41,7 @@ export default function DestinationSearch({ stationId, selectedPoi, onSelect, on
         type="text"
         inputMode="search"
         autoComplete="off"
-        placeholder="Where are you headed?"
+        placeholder="Sushiro"
         value={query}
         onChange={(e) => {
           setQuery(e.target.value)

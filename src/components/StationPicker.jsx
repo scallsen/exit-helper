@@ -40,7 +40,7 @@ export default function StationPicker({ selectedStation, onSelect }) {
         type="text"
         inputMode="search"
         autoComplete="off"
-        placeholder="Search a Chuo-Sōbu station..."
+        placeholder="Shinjuku"
         value={query}
         onChange={(e) => {
           setQuery(e.target.value)

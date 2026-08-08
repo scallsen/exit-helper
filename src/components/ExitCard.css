@@ -38,7 +38,7 @@
 
 .exit-card-badge {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   background: var(--color-sign-yellow);
   color: var(--color-sign-black);
@@ -93,7 +93,7 @@
 .exit-card--promoted .exit-card-label {
   display: block;
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 40px;
   line-height: 1.2;
   margin: 2px 0;

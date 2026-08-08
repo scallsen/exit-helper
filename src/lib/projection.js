@@ -34,3 +34,11 @@ export function projectPoints(center, points, { size = 320, padding = 48 } = {})
     y: size / 2 - p.my * scale,
   }))
 }
+
+// Snaps a projected coordinate to a small grid so structural shapes
+// (building footprint, platforms) read as blocky/stepped rather than
+// smooth OSM curves — reinforces the dot-matrix identity (see CLAUDE.md).
+// Exit/POI markers are NOT snapped — only context geometry.
+export function snapToGrid(value, step = 8) {
+  return Math.round(value / step) * step
+}

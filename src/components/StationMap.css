@@ -18,6 +18,21 @@
   fill: var(--color-border);
 }
 
+.station-map-footprint {
+  fill: var(--color-bg-elevated);
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+  stroke-linejoin: miter;
+}
+
+.station-map-platform {
+  fill: none;
+  stroke: var(--color-text-muted);
+  stroke-width: 3;
+  stroke-linecap: square;
+  opacity: 0.5;
+}
+
 .station-map-center {
   fill: var(--color-text-muted);
 }

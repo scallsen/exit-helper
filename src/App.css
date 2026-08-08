@@ -27,6 +27,16 @@
   margin: 0 auto;
 }
 
+.app-search-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
 .app-hint {
   color: var(--color-text-muted);
   font-size: 14px;

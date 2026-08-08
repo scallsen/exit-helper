@@ -8,6 +8,14 @@
 // Coordinates are approximate (rounded from real station locations) and
 // exit/POI placements are illustrative, not surveyed — good enough to
 // exercise search, the schematic map, and the ranking function.
+//
+// `footprint` and `platforms` are a schema extension candidate, not yet in
+// SPEC.md: a station building outline (closed polygon) and platform bars,
+// each an array of [lat, lon] pairs — shaped like what Overpass would
+// return for `building=train_station` / `railway=platform` ways. Flat and
+// additive per CLAUDE.md's schema rule. No real indoor wall data exists at
+// v1 scope (see SPEC.md's Hokonavi coverage note) — this is context
+// geometry, not a floor plan.
 
 export const stations = [
   {
@@ -17,6 +25,16 @@ export const stations = [
     lat: 35.6995,
     lon: 139.7649,
     line_ids: ['odpt.Railway:JR-East.ChuoSobu'],
+    footprint: [
+      [35.7007, 139.7631],
+      [35.7007, 139.7667],
+      [35.6983, 139.7667],
+      [35.6983, 139.7631],
+    ],
+    platforms: [
+      { id: 'platform.Ochanomizu.1', points: [[35.6993, 139.7634], [35.6993, 139.7664]] },
+      { id: 'platform.Ochanomizu.2', points: [[35.6997, 139.7634], [35.6997, 139.7664]] },
+    ],
   },
   {
     id: 'odpt.Station:JR-East.ChuoSobuLine.Suidobashi',
@@ -25,6 +43,16 @@ export const stations = [
     lat: 35.702,
     lon: 139.753,
     line_ids: ['odpt.Railway:JR-East.ChuoSobu'],
+    footprint: [
+      [35.7032, 139.7512],
+      [35.7032, 139.7548],
+      [35.7008, 139.7548],
+      [35.7008, 139.7512],
+    ],
+    platforms: [
+      { id: 'platform.Suidobashi.1', points: [[35.7018, 139.7515], [35.7018, 139.7545]] },
+      { id: 'platform.Suidobashi.2', points: [[35.7022, 139.7515], [35.7022, 139.7545]] },
+    ],
   },
   {
     id: 'odpt.Station:JR-East.ChuoSobuLine.Yotsuya',
@@ -33,6 +61,16 @@ export const stations = [
     lat: 35.6857,
     lon: 139.73,
     line_ids: ['odpt.Railway:JR-East.ChuoSobu'],
+    footprint: [
+      [35.6869, 139.7282],
+      [35.6869, 139.7318],
+      [35.6845, 139.7318],
+      [35.6845, 139.7282],
+    ],
+    platforms: [
+      { id: 'platform.Yotsuya.1', points: [[35.6855, 139.7285], [35.6855, 139.7315]] },
+      { id: 'platform.Yotsuya.2', points: [[35.6859, 139.7285], [35.6859, 139.7315]] },
+    ],
   },
 ]
 

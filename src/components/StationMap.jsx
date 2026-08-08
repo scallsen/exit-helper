@@ -1,12 +1,18 @@
 import { useMemo, useState } from 'react'
-import { projectPoints } from '../lib/projection.js'
+import { projectPoints, snapToGrid } from '../lib/projection.js'
 import './StationMap.css'
 
 const SIZE = 320
 
+function toSvgPoints(pts) {
+  return pts.map((p) => `${snapToGrid(p.x)},${snapToGrid(p.y)}`).join(' ')
+}
+
 // Stylized schematic diagram of a station — exits and POIs as pixel-style
 // markers on a local plot, not real basemap tiles. See CLAUDE.md: real
-// OSM/Leaflet tiles would clash with the retro sign aesthetic.
+// OSM/Leaflet tiles would clash with the retro sign aesthetic. Footprint
+// and platform geometry (if present) are context shapes, not a floor plan
+// — see the note in fixtures.js on why real indoor walls aren't available.
 export default function StationMap({
   station,
   exits,
@@ -17,19 +23,36 @@ export default function StationMap({
 }) {
   const [activeId, setActiveId] = useState(null)
 
+  const footprint = useMemo(() => station.footprint ?? [], [station])
+  const platforms = useMemo(() => station.platforms ?? [], [station])
+
   const projected = useMemo(() => {
     const points = [
       ...exits.map((e) => ({ ...e, kind: 'exit' })),
       ...pois.map((p) => ({ ...p, kind: 'poi' })),
       ...(destination ? [{ ...destination, kind: 'destination' }] : []),
+      ...footprint.map(([lat, lon], i) => ({ id: `footprint-${i}`, lat, lon, kind: 'footprint' })),
+      ...platforms.flatMap((platform, pIdx) =>
+        platform.points.map(([lat, lon], i) => ({
+          id: `platform-${pIdx}-${i}`,
+          lat,
+          lon,
+          kind: 'platform',
+          platformIdx: pIdx,
+        })),
+      ),
     ]
     return projectPoints(station, points, { size: SIZE, padding: 40 })
-  }, [station, exits, pois, destination])
+  }, [station, exits, pois, destination, footprint, platforms])
 
   const exitPoints = projected.filter((p) => p.kind === 'exit')
   const poiPoints = projected.filter((p) => p.kind === 'poi')
   const destPoint = projected.find((p) => p.kind === 'destination')
   const primaryPoint = exitPoints.find((p) => p.id === primaryExitId)
+  const footprintPoints = projected.filter((p) => p.kind === 'footprint')
+  const platformLines = platforms.map((_, pIdx) =>
+    projected.filter((p) => p.kind === 'platform' && p.platformIdx === pIdx),
+  )
 
   return (
     <div className="station-map">
@@ -45,6 +68,16 @@ export default function StationMap({
           </pattern>
         </defs>
         <rect width={SIZE} height={SIZE} fill="url(#station-map-grid)" />
+
+        {footprintPoints.length > 2 && (
+          <polygon className="station-map-footprint" points={toSvgPoints(footprintPoints)} />
+        )}
+
+        {platformLines.map((pts, idx) =>
+          pts.length > 1 ? (
+            <polyline key={idx} className="station-map-platform" points={toSvgPoints(pts)} />
+          ) : null,
+        )}
 
         {/* straight-line path to destination — deliberately not a routed path */}
         {destPoint && primaryPoint && (

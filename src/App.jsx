@@ -31,7 +31,18 @@ function App() {
       <Logo />
       <div className="app-databadge">Preview data — ODPT account pending, exits/places shown here are placeholders</div>
       <main className="app-main">
-        <StationPicker selectedStation={station} onSelect={handleSelectStation} />
+        <div className="app-search-group">
+          <StationPicker selectedStation={station} onSelect={handleSelectStation} />
+
+          {station && (
+            <DestinationSearch
+              stationId={station.id}
+              selectedPoi={destination}
+              onSelect={setDestination}
+              onClear={() => setDestination(null)}
+            />
+          )}
+        </div>
 
         {station && (
           <>
@@ -42,13 +53,6 @@ function App() {
               destination={destination}
               primaryExitId={ranked.primary?.exit.id}
               alternateExitIds={ranked.alternates.map((a) => a.exit.id)}
-            />
-
-            <DestinationSearch
-              stationId={station.id}
-              selectedPoi={destination}
-              onSelect={setDestination}
-              onClear={() => setDestination(null)}
             />
 
             {destination ? (

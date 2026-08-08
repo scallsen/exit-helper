@@ -110,13 +110,16 @@
   border-top-color: rgb(10 10 10 / 15%);
 }
 
-/* ShareButton defaults to yellow-on-dark; override for the yellow promoted
-   panel so it isn't yellow text on a yellow background. */
+/* NavigateLink/ShareButton default to yellow-on-dark; override for the
+   yellow promoted panel so it isn't yellow text on a yellow background. */
+.exit-card--promoted .navigate-link,
 .exit-card--promoted .share-button-action {
   border-color: var(--color-sign-black);
   color: var(--color-sign-black);
 }
 
+.exit-card--promoted .navigate-link:hover,
+.exit-card--promoted .navigate-link:focus-visible,
 .exit-card--promoted .share-button-action:hover,
 .exit-card--promoted .share-button-action:focus-visible {
   background: rgb(10 10 10 / 10%);

@@ -1,10 +1,7 @@
-.share-button {
+.navigate-link {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-}
-
-.share-button-action {
+  align-items: center;
+  justify-content: center;
   min-height: var(--tap-target-min);
   background: transparent;
   border: 1px solid var(--color-sign-yellow-dim);
@@ -13,16 +10,11 @@
   font-family: var(--font-display);
   font-size: 13px;
   letter-spacing: 0.5px;
+  text-decoration: none;
 }
 
-.share-button-action:hover,
-.share-button-action:focus-visible {
+.navigate-link:hover,
+.navigate-link:focus-visible {
   background: var(--color-bg-inset);
   outline: none;
-}
-
-.share-button-url {
-  font-size: 11px;
-  color: var(--color-text-muted);
-  word-break: break-all;
 }

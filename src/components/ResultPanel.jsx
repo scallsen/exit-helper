@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import ExitCard from './ExitCard.jsx'
+import NavigateLink from './NavigateLink.jsx'
 import ShareButton from './ShareButton.jsx'
 import './ResultPanel.css'
 
@@ -17,10 +18,10 @@ function alternateMeta(ranked) {
 // Primary renders as the promoted card, everything else as low-priority
 // cards ranked by distance (see ExitCard for what each state means).
 //
-// The share button follows whichever exit is selected — primary by
-// default, but clicking any other exit card makes it the share target
-// instead, so "share the exit I'm actually using" isn't locked to whatever
-// the ranking picked.
+// Navigate/Share follow whichever exit is selected — primary by default,
+// but clicking any other exit card makes it the target instead, so
+// "get me to the exit I'm actually using" isn't locked to whatever the
+// ranking picked.
 export default function ResultPanel({ station, destination, primary, alternates, farther = [] }) {
   const [selectedExitId, setSelectedExitId] = useState(primary?.exit.id ?? null)
 
@@ -38,7 +39,12 @@ export default function ResultPanel({ station, destination, primary, alternates,
         state={state}
         selected={selectedExitId === ranked.exit.id}
         onSelect={() => setSelectedExitId(ranked.exit.id)}
-        action={<ShareButton station={station} exit={ranked.exit} destination={destination} />}
+        action={
+          <div className="result-panel-actions">
+            <NavigateLink exit={ranked.exit} destination={destination} />
+            <ShareButton station={station} exit={ranked.exit} destination={destination} />
+          </div>
+        }
         {...extra}
       />
     )

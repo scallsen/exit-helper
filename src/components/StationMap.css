@@ -21,15 +21,18 @@
 .station-map-street {
   fill: none;
   stroke: var(--color-border);
-  stroke-width: 1.5;
+  stroke-width: 1;
   stroke-linecap: square;
-  opacity: 0.7;
+  opacity: 0.55;
 }
 
+/* Brighter/thicker than streets on purpose — at matching weight the two
+   were visually indistinguishable, and the building outline is the more
+   important shape to read at a glance. */
 .station-map-footprint {
   fill: var(--color-bg-elevated);
-  stroke: var(--color-border);
-  stroke-width: 1.5;
+  stroke: var(--color-text-muted);
+  stroke-width: 2;
   stroke-linejoin: miter;
 }
 
@@ -45,12 +48,6 @@
   fill: var(--color-text-muted);
 }
 
-.station-map-center-label {
-  fill: var(--color-text-muted);
-  font-family: var(--font-body);
-  font-size: 10px;
-}
-
 .station-map-path {
   stroke: var(--color-sign-yellow-dim);
   stroke-width: 1.5;
@@ -61,6 +58,7 @@
   fill: var(--color-sign-yellow);
   stroke: var(--color-sign-black);
   stroke-width: 1.5;
+  cursor: pointer;
 }
 
 .station-map-exit-label {

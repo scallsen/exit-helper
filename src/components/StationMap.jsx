@@ -128,17 +128,16 @@ export default function StationMap({
           />
         )}
 
-        {/* station center */}
+        {/* station center — no text label: the station name is already
+            shown in the picker above the map, and the label collided with
+            exit markers whenever entrances cluster near the center */}
         <rect
-          x={SIZE / 2 - 7}
-          y={SIZE / 2 - 7}
-          width="14"
-          height="14"
+          x={SIZE / 2 - 5}
+          y={SIZE / 2 - 5}
+          width="10"
+          height="10"
           className="station-map-center"
         />
-        <text x={SIZE / 2} y={SIZE / 2 + 24} textAnchor="middle" className="station-map-center-label">
-          {station.name_en}
-        </text>
 
         {poiPoints.map((p) => (
           <g
@@ -167,6 +166,12 @@ export default function StationMap({
         {exitPoints.map((e) => {
           const isPrimary = e.id === primaryExitId
           const isAlternate = alternateExitIds.includes(e.id)
+          // Real entrances often cluster 15-40m apart — always-on labels
+          // for every exit collide into an unreadable pile. Only the
+          // recommended exit gets a standing label (it's the answer);
+          // everything else reveals on tap, same as POIs below. The full
+          // list with names still lives in ExitOverview under the map.
+          const showLabel = isPrimary || activeId === e.id
           return (
             <g
               key={e.id}
@@ -177,11 +182,14 @@ export default function StationMap({
               ]
                 .filter(Boolean)
                 .join(' ')}
+              onClick={() => setActiveId((cur) => (cur === e.id ? null : e.id))}
             >
               <rect x={e.x - 8} y={e.y - 8} width="16" height="16" />
-              <text x={e.x} y={e.y + 22} textAnchor="middle" className="station-map-exit-label">
-                {e.label}
-              </text>
+              {showLabel && (
+                <text x={e.x} y={e.y + 22} textAnchor="middle" className="station-map-exit-label">
+                  {e.label}
+                </text>
+              )}
             </g>
           )
         })}

@@ -1,0 +1,17 @@
+.logo-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: var(--space-3) var(--space-3);
+  background: var(--color-sign-yellow);
+  border-radius: var(--radius-sm);
+}
+
+.logo-bar-text {
+  font-family: var(--font-display);
+  font-size: 14px;
+  color: var(--color-text-on-sign);
+  letter-spacing: 1px;
+  white-space: nowrap;
+}

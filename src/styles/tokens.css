@@ -1,0 +1,46 @@
+/*
+  Design tokens for the "station exit sign" theme.
+  Anchor: real JR exit-sign panels (yellow backdrop, black text/pictogram),
+  placed on a dark app shell so the signs pop the way they do against a
+  station at night. See CLAUDE.md for the rationale.
+*/
+
+:root {
+  /* -- surfaces (dark shell) -- */
+  --color-bg: #101014;
+  --color-bg-elevated: #1a1a20;
+  --color-bg-inset: #0a0a0d;
+  --color-border: #2c2c34;
+
+  /* -- exit sign (the one accent that should read as "signage") -- */
+  --color-sign-yellow: #ffd400;
+  --color-sign-yellow-dim: #c9a900;
+  --color-sign-black: #0a0a0a;
+
+  /* -- text -- */
+  --color-text: #f2f2ef;
+  --color-text-muted: #9a9aa2;
+  --color-text-on-sign: var(--color-sign-black);
+
+  /* -- status (kept minimal, only added when a use case demands it) -- */
+  --color-danger: #ff4d4d;
+  --color-success: #4dff88;
+
+  /* -- type -- */
+  --font-display: 'Press Start 2P', 'Pixelify Sans', system-ui, sans-serif;
+  --font-body: 'Pixelify Sans', 'Press Start 2P', system-ui, sans-serif;
+
+  /* -- spacing / radii: deliberately blocky, no soft corners -- */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 32px;
+
+  /* -- mobile-first tap targets -- */
+  --tap-target-min: 44px;
+
+  color-scheme: dark;
+}

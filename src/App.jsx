@@ -47,6 +47,8 @@ function App() {
           )}
         </header>
 
+        <hr className="app-divider" />
+
         <main className="app-main">
           {station && (
             <>

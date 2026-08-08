@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: var(--space-2) var(--space-3);
+  padding: var(--space-3);
 }
 
 .logo-bar-text {

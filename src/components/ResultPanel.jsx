@@ -41,7 +41,10 @@ export default function ResultPanel({ station, destination, primary, alternates,
         onSelect={() => setSelectedExitId(ranked.exit.id)}
         action={
           <div className="result-panel-actions">
-            <NavigateLink exit={ranked.exit} destination={destination} />
+            <div className="navigate-links">
+              <NavigateLink exit={ranked.exit} destination={destination} provider="google" />
+              <NavigateLink exit={ranked.exit} destination={destination} provider="apple" />
+            </div>
             <ShareButton station={station} exit={ranked.exit} destination={destination} />
           </div>
         }

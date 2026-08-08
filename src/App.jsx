@@ -33,8 +33,8 @@ function App() {
   return (
     <div className="app">
       <Logo />
-      <main className="app-main">
-        <div className="app-search-group">
+      <div className="app-content">
+        <header className="app-header">
           <StationPicker selectedStation={station} onSelect={handleSelectStation} />
 
           {station && (
@@ -45,28 +45,30 @@ function App() {
               onClear={() => setDestination(null)}
             />
           )}
-        </div>
+        </header>
 
-        {station && (
-          <>
-            {destination ? (
-              <ResultPanel
-                station={station}
-                destination={destination}
-                primary={ranked.primary}
-                alternates={ranked.alternates}
-                farther={ranked.farther}
-              />
-            ) : (
-              <ExitOverview exits={stationExits} pois={stationPois} />
-            )}
-          </>
-        )}
+        <main className="app-main">
+          {station && (
+            <>
+              {destination ? (
+                <ResultPanel
+                  station={station}
+                  destination={destination}
+                  primary={ranked.primary}
+                  alternates={ranked.alternates}
+                  farther={ranked.farther}
+                />
+              ) : (
+                <ExitOverview exits={stationExits} pois={stationPois} />
+              )}
+            </>
+          )}
 
-        {!station && (
-          <p className="app-hint">Pick a station to see its exits — add a destination once you have one.</p>
-        )}
-      </main>
+          {!station && (
+            <p className="app-hint">Pick a station to see its exits — add a destination once you have one.</p>
+          )}
+        </main>
+      </div>
     </div>
   )
 }

@@ -53,6 +53,29 @@ function isMetroWay(el) {
 // bad ones.
 const MAX_ENTRANCE_TO_STRUCTURE_M = 150
 
+// Same JR-only assumption as METRO_ONLY_RAILWAY_VALUES above, applied to
+// building=train_station candidates: Yotsuya has a Tokyo Metro station
+// building (184607319, operator="東京地下鉄", 32 nodes) that outsized the
+// real JR one (143839128, 22 nodes) and got picked by a point-count-only
+// heuristic — unlike entrances/platforms, buildings had no filter at all.
+const JR_OPERATOR_SUBSTRING = '東日本旅客鉄道'
+
+// Real footprints seen so far span 25-65m. Yotsuya also had two unlabeled
+// building=train_station ways spanning 230-240m — no single station
+// building is that large at this scale; almost certainly a multipolygon
+// piece or other mapping artifact, not a real footprint. Generous enough
+// to leave room for an actually big station later, but tight enough to
+// reject those two.
+const MAX_FOOTPRINT_SPAN_M = 150
+
+function boundingSpanMeters(geometry) {
+  const lats = geometry.map((p) => p.lat)
+  const lons = geometry.map((p) => p.lon)
+  const corner1 = { lat: Math.min(...lats), lon: Math.min(...lons) }
+  const corner2 = { lat: Math.max(...lats), lon: Math.max(...lons) }
+  return distanceMeters(corner1, corner2)
+}
+
 // Overpass's `around` filter includes a whole way if ANY node falls inside
 // the query radius, so a street can run well past our 350m pull radius.
 // Clip each way's points to this distance instead of relying on the query
@@ -120,7 +143,10 @@ function normalizeExits(raw, structureWays, slug, stationId) {
 }
 
 function normalizeFootprint(structureWays) {
-  const buildingWays = structureWays.filter((el) => el.tags?.building === 'train_station')
+  const buildingWays = structureWays
+    .filter((el) => el.tags?.building === 'train_station')
+    .filter((el) => !el.tags?.operator || el.tags.operator.includes(JR_OPERATOR_SUBSTRING))
+    .filter((el) => boundingSpanMeters(el.geometry) <= MAX_FOOTPRINT_SPAN_M)
   if (buildingWays.length === 0) return undefined
   const largest = buildingWays.reduce((a, b) => (a.geometry.length >= b.geometry.length ? a : b))
   return largest.geometry.map((p) => [p.lat, p.lon])

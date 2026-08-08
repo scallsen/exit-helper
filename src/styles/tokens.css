@@ -26,9 +26,9 @@
   --color-danger: #ff4d4d;
   --color-success: #4dff88;
 
-  /* -- type -- */
-  --font-display: 'Press Start 2P', 'Pixelify Sans', system-ui, sans-serif;
-  --font-body: 'Pixelify Sans', 'Press Start 2P', system-ui, sans-serif;
+  /* -- type: single custom dot-matrix font (display + body + ja glyphs) -- */
+  --font-display: 'DotGothic16', system-ui, sans-serif;
+  --font-body: 'DotGothic16', system-ui, sans-serif;
 
   /* -- spacing / radii: deliberately blocky, no soft corners -- */
   --radius-sm: 2px;

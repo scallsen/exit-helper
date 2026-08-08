@@ -1,7 +1,11 @@
 import { useMemo, useState } from 'react'
 import Logo from './components/Logo.jsx'
 import StationPicker from './components/StationPicker.jsx'
-import StationMap from './components/StationMap.jsx'
+// StationMap is temporarily not rendered — the schematic footprint still
+// doesn't look right (verified via bounding-box checks that the data is at
+// least co-located, but the shape itself is under dispute). See
+// MAP_EXPLORATION.md for what's been tried and the leading hypothesis.
+// import StationMap from './components/StationMap.jsx'
 import ExitOverview from './components/ExitOverview.jsx'
 import DestinationSearch from './components/DestinationSearch.jsx'
 import ResultPanel from './components/ResultPanel.jsx'
@@ -48,15 +52,6 @@ function App() {
 
         {station && (
           <>
-            <StationMap
-              station={station}
-              exits={stationExits}
-              pois={stationPois}
-              destination={destination}
-              primaryExitId={ranked.primary?.exit.id}
-              alternateExitIds={ranked.alternates.map((a) => a.exit.id)}
-            />
-
             {destination ? (
               <ResultPanel
                 station={station}

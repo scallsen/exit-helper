@@ -36,14 +36,6 @@
   flex-wrap: wrap;
 }
 
-.exit-card-eyebrow {
-  display: block;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  opacity: 0.7;
-}
-
 .exit-card-badge {
   font-family: var(--font-display);
   font-weight: 700;
@@ -107,7 +99,6 @@
   margin: 2px 0;
 }
 
-.exit-card--promoted .exit-card-eyebrow,
 .exit-card--promoted .exit-card-label,
 .exit-card--promoted .exit-card-meta,
 .exit-card--promoted .exit-card-note {

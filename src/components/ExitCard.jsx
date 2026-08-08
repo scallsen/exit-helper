@@ -10,7 +10,6 @@ import './ExitCard.css'
 export default function ExitCard({
   exit,
   state = 'neutral',
-  eyebrow,
   meta,
   nearby,
   selected = false,
@@ -37,7 +36,6 @@ export default function ExitCard({
   const body = (
     <>
       <div className="exit-card-header">
-        {eyebrow && <span className="exit-card-eyebrow">{eyebrow}</span>}
         {state === 'promoted' ? (
           <span className="exit-card-label">{exit.label}</span>
         ) : (

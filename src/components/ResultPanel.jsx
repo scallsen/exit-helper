@@ -46,10 +46,12 @@ export default function ResultPanel({ station, destination, primary, alternates,
 
   return (
     <div className="result-panel">
-      {renderCard(primary, 'promoted', {
-        eyebrow: 'Use',
-        meta: `≈${formatDistance(primary.distanceMeters)} · ${primary.walkMinutes} min walk`,
-      })}
+      <div className="result-panel-section">
+        <div className="result-panel-section-label">Recommended</div>
+        {renderCard(primary, 'promoted', {
+          meta: `≈${formatDistance(primary.distanceMeters)} · ${primary.walkMinutes} min walk`,
+        })}
+      </div>
 
       {alternates.length > 0 && (
         <div className="result-panel-section">

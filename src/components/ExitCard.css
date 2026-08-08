@@ -137,6 +137,7 @@
   border-color: var(--color-sign-yellow-dim);
 }
 
+.exit-card--neutral .exit-card-trigger,
 .exit-card--low-priority .exit-card-trigger {
   padding-top: var(--space-3);
 }

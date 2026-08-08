@@ -18,31 +18,33 @@ export default function ExitCard({
   action,
 }) {
   const clickable = typeof onSelect === 'function'
+
   const className = ['exit-card', `exit-card--${state}`, selected && 'exit-card--selected']
     .filter(Boolean)
     .join(' ')
 
-  const header = (
-    <>
-      {eyebrow && <span className="exit-card-eyebrow">{eyebrow}</span>}
-      {state === 'promoted' ? (
-        <span className="exit-card-label">{exit.label}</span>
-      ) : (
-        <span className="exit-card-badge">{exit.label}</span>
-      )}
-      {exit.notes && <span className="exit-card-note">{exit.notes}</span>}
-    </>
-  )
+  const triggerClassName = ['exit-card-trigger', clickable && 'exit-card-trigger--clickable']
+    .filter(Boolean)
+    .join(' ')
 
-  return (
-    <div className={className}>
-      {clickable ? (
-        <button type="button" className="exit-card-trigger" onClick={onSelect}>
-          {header}
-        </button>
-      ) : (
-        <div className="exit-card-trigger">{header}</div>
-      )}
+  function handleKeyDown(event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault()
+      onSelect()
+    }
+  }
+
+  const body = (
+    <>
+      <div className="exit-card-header">
+        {eyebrow && <span className="exit-card-eyebrow">{eyebrow}</span>}
+        {state === 'promoted' ? (
+          <span className="exit-card-label">{exit.label}</span>
+        ) : (
+          <span className="exit-card-badge">{exit.label}</span>
+        )}
+        {exit.notes && <span className="exit-card-note">{exit.notes}</span>}
+      </div>
 
       {meta && <div className="exit-card-meta">{meta}</div>}
 
@@ -56,6 +58,27 @@ export default function ExitCard({
         ) : (
           <p className="exit-card-empty">No nearby places recorded yet</p>
         ))}
+    </>
+  )
+
+  return (
+    <div className={className}>
+      {clickable ? (
+        // Whole card (header, meta, nearby list) is one tap target — a
+        // <button> can't be used here since the action slot below may
+        // render its own button (ShareButton), and buttons can't nest.
+        <div
+          className={triggerClassName}
+          role="button"
+          tabIndex={0}
+          onClick={onSelect}
+          onKeyDown={handleKeyDown}
+        >
+          {body}
+        </div>
+      ) : (
+        <div className={triggerClassName}>{body}</div>
+      )}
 
       {selected && action && <div className="exit-card-action">{action}</div>}
     </div>

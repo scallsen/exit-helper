@@ -2,27 +2,38 @@
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
   background: var(--color-bg-elevated);
-  padding: var(--space-2) var(--space-3);
+  overflow: hidden;
 }
 
 .exit-card-trigger {
+  display: block;
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+}
+
+.exit-card-trigger--clickable {
+  cursor: pointer;
+  min-height: var(--tap-target-min);
+}
+
+.exit-card-trigger--clickable:hover {
+  background: rgb(255 255 255 / 5%);
+}
+
+.exit-card-trigger--clickable:focus-visible {
+  outline: 2px solid var(--color-sign-yellow);
+  outline-offset: -2px;
+}
+
+.exit-card--promoted .exit-card-trigger--clickable:hover {
+  background: rgb(10 10 10 / 5%);
+}
+
+.exit-card-header {
   display: flex;
   align-items: center;
   gap: var(--space-2);
   flex-wrap: wrap;
-  width: 100%;
-  background: none;
-  border: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  color: inherit;
-  font: inherit;
-}
-
-button.exit-card-trigger {
-  cursor: pointer;
-  min-height: var(--tap-target-min);
 }
 
 .exit-card-eyebrow {
@@ -77,8 +88,7 @@ button.exit-card-trigger {
 }
 
 .exit-card-action {
-  margin-top: var(--space-2);
-  padding-top: var(--space-2);
+  padding: var(--space-2) var(--space-3);
   border-top: 1px solid var(--color-border);
 }
 
@@ -86,10 +96,6 @@ button.exit-card-trigger {
 .exit-card--promoted {
   background: var(--color-sign-yellow);
   border-color: var(--color-sign-yellow);
-}
-
-.exit-card--promoted .exit-card-trigger {
-  display: block;
 }
 
 .exit-card--promoted .exit-card-label {

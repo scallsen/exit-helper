@@ -1,5 +1,5 @@
 import { useId, useState } from 'react'
-import { searchStations } from '../data/fixtures.js'
+import { searchStations } from '../data/dataset.js'
 import './StationPicker.css'
 
 export default function StationPicker({ selectedStation, onSelect }) {

@@ -1,5 +1,5 @@
 import { useId, useState } from 'react'
-import { searchPois } from '../data/fixtures.js'
+import { searchPois } from '../data/dataset.js'
 import './DestinationSearch.css'
 
 export default function DestinationSearch({ stationId, selectedPoi, onSelect, onClear }) {

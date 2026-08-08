@@ -5,7 +5,7 @@ import StationMap from './components/StationMap.jsx'
 import ExitOverview from './components/ExitOverview.jsx'
 import DestinationSearch from './components/DestinationSearch.jsx'
 import ResultPanel from './components/ResultPanel.jsx'
-import { exitsForStation, poisForStation } from './data/fixtures.js'
+import { exitsForStation, poisForStation } from './data/dataset.js'
 import { rankExits } from './lib/ranking.js'
 import './App.css'
 
@@ -29,7 +29,9 @@ function App() {
   return (
     <div className="app">
       <Logo />
-      <div className="app-databadge">Preview data — ODPT account pending, exits/places shown here are placeholders</div>
+      <div className="app-databadge">
+        Real Overpass data (3 stations) — station list is a manual stand-in until ODPT access lands
+      </div>
       <main className="app-main">
         <div className="app-search-group">
           <StationPicker selectedStation={station} onSelect={handleSelectStation} />

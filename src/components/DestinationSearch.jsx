@@ -12,7 +12,7 @@ export default function DestinationSearch({ stationId, selectedPoi, onSelect, on
   if (selectedPoi && !open) {
     return (
       <div className="destination-search destination-search-summary">
-        <div className="destination-search-summary-label">Destination</div>
+        <div className="destination-search-label">Destination</div>
         <div className="destination-search-summary-value">
           <span>{selectedPoi.name}</span>
           <button

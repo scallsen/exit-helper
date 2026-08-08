@@ -12,7 +12,7 @@ export default function StationPicker({ selectedStation, onSelect }) {
   if (selectedStation && !open) {
     return (
       <div className="station-picker station-picker-summary">
-        <div className="station-picker-summary-label">Station</div>
+        <div className="station-picker-label">Station</div>
         <button
           type="button"
           className="station-picker-summary-value"

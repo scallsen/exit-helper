@@ -1,9 +1,28 @@
 import ShareButton from './ShareButton.jsx'
 import './ResultPanel.css'
 
-// Tier 2 (station + destination, SPEC.md): ranked exit recommendation —
-// primary + close alternates.
-export default function ResultPanel({ station, destination, primary, alternates }) {
+function formatDistance(meters) {
+  return meters < 1000 ? `${Math.round(meters)}m` : `${(meters / 1000).toFixed(1)}km`
+}
+
+function SecondaryExit({ alt }) {
+  return (
+    <li className="result-panel-secondary-item">
+      <span className="result-panel-secondary-badge">{alt.exit.label}</span>
+      <span className="result-panel-secondary-meta">
+        +{alt.deltaMeters}m · {alt.walkMinutes} min walk
+        {alt.exit.notes ? ` · ${alt.exit.notes}` : ''}
+      </span>
+    </li>
+  )
+}
+
+// Tier 2 (station + destination, SPEC.md): ranked exit recommendation.
+// Primary is the single closest exit, shown big. `alternates` are close
+// enough to still surface by default; anything farther still exists as a
+// station exit, so it stays reachable — just collapsed behind a disclosure
+// instead of dropped from the UI.
+export default function ResultPanel({ station, destination, primary, alternates, farther = [] }) {
   if (!primary) return null
 
   return (
@@ -12,27 +31,32 @@ export default function ResultPanel({ station, destination, primary, alternates 
         <div className="result-panel-primary-label">Use</div>
         <div className="result-panel-primary-exit">{primary.exit.label}</div>
         <div className="result-panel-primary-meta">
-          ≈{primary.distanceMeters < 1000 ? `${Math.round(primary.distanceMeters)}m` : `${(primary.distanceMeters / 1000).toFixed(1)}km`}
-          {' · '}
-          {primary.walkMinutes} min walk
+          ≈{formatDistance(primary.distanceMeters)} · {primary.walkMinutes} min walk
         </div>
       </div>
 
       {alternates.length > 0 && (
-        <div className="result-panel-alternates">
-          <div className="result-panel-alternates-label">Also close</div>
+        <div className="result-panel-secondary">
+          <div className="result-panel-secondary-label">Also close</div>
           <ul>
             {alternates.map((alt) => (
-              <li key={alt.exit.id}>
-                <span className="result-panel-alt-name">{alt.exit.label}</span>
-                <span className="result-panel-alt-delta">
-                  +{alt.deltaMeters}m
-                  {alt.exit.notes ? ` · ${alt.exit.notes}` : ''}
-                </span>
-              </li>
+              <SecondaryExit key={alt.exit.id} alt={alt} />
             ))}
           </ul>
         </div>
+      )}
+
+      {farther.length > 0 && (
+        <details className="result-panel-more">
+          <summary>
+            {farther.length} more exit{farther.length > 1 ? 's' : ''} further away
+          </summary>
+          <ul>
+            {farther.map((alt) => (
+              <SecondaryExit key={alt.exit.id} alt={alt} />
+            ))}
+          </ul>
+        </details>
       )}
 
       <p className="result-panel-caveat">

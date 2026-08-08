@@ -21,7 +21,7 @@ function App() {
   const stationPois = useMemo(() => (station ? poisForStation(station.id) : []), [station])
 
   const ranked = useMemo(() => {
-    if (!destination || stationExits.length === 0) return { primary: null, alternates: [] }
+    if (!destination || stationExits.length === 0) return { primary: null, alternates: [], farther: [] }
     return rankExits(stationExits, destination)
   }, [destination, stationExits])
 
@@ -55,6 +55,7 @@ function App() {
                 destination={destination}
                 primary={ranked.primary}
                 alternates={ranked.alternates}
+                farther={ranked.farther}
               />
             ) : (
               <ExitOverview exits={stationExits} pois={stationPois} />

@@ -7,8 +7,12 @@ const ALTERNATE_TOLERANCE_M = 150
 // exit to the destination, closest wins, anything within tolerance of the
 // winner rides along as an alternate. Deliberate v1 simplification — see
 // CLAUDE.md on why this isn't real indoor routing.
+//
+// Exits beyond tolerance aren't dropped — they come back as `farther` so the
+// UI can still surface them (collapsed, below the fold) instead of silently
+// hiding station exits.
 export function rankExits(stationExits, destination) {
-  if (!stationExits.length) return { primary: null, alternates: [] }
+  if (!stationExits.length) return { primary: null, alternates: [], farther: [] }
 
   const ranked = stationExits
     .map((exit) => {
@@ -18,15 +22,16 @@ export function rankExits(stationExits, destination) {
     .sort((a, b) => a.distanceMeters - b.distanceMeters)
 
   const [primary, ...rest] = ranked
-  const alternates = rest
-    .filter((r) => r.distanceMeters - primary.distanceMeters <= ALTERNATE_TOLERANCE_M)
-    .map((r) => ({
-      ...r,
-      deltaMeters: Math.round(r.distanceMeters - primary.distanceMeters),
-      deltaMinutes: Math.max(0, r.walkMinutes - primary.walkMinutes),
-    }))
+  const withDelta = rest.map((r) => ({
+    ...r,
+    deltaMeters: Math.round(r.distanceMeters - primary.distanceMeters),
+    deltaMinutes: Math.max(0, r.walkMinutes - primary.walkMinutes),
+  }))
 
-  return { primary, alternates }
+  const alternates = withDelta.filter((r) => r.deltaMeters <= ALTERNATE_TOLERANCE_M)
+  const farther = withDelta.filter((r) => r.deltaMeters > ALTERNATE_TOLERANCE_M)
+
+  return { primary, alternates, farther }
 }
 
 // Assigns each POI to its nearest exit — used for the station-only tier

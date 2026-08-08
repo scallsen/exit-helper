@@ -12,7 +12,6 @@
   color: var(--color-text);
   letter-spacing: 1px;
   white-space: nowrap;
-  text-shadow: 2px 2px 0 var(--color-bg-inset);
 }
 
 .logo-bar-highlight {

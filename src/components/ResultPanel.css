@@ -8,39 +8,7 @@
   gap: var(--space-3);
 }
 
-/* Primary: the one main recommendation — full yellow panel, black text,
-   largest type in the result. Mirrors a real exit sign's primary panel. */
-.result-panel-primary {
-  background: var(--color-sign-yellow);
-  color: var(--color-sign-black);
-  border-radius: var(--radius-sm);
-  padding: var(--space-3);
-}
-
-.result-panel-primary-label {
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  opacity: 0.7;
-}
-
-.result-panel-primary-exit {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.2;
-  margin: 2px 0;
-}
-
-.result-panel-primary-meta {
-  font-size: 14px;
-  opacity: 0.75;
-}
-
-/* Secondary: close alternates and the collapsed "farther" exits share this
-   look — white directional-sign panel with a yellow badge on the exit
-   number/name, contrasting with the primary's solid yellow panel. */
-.result-panel-secondary-label {
+.result-panel-section-label {
   font-size: 12px;
   color: var(--color-text-muted);
   letter-spacing: 0.5px;
@@ -48,41 +16,13 @@
   margin-bottom: var(--space-1);
 }
 
-.result-panel-secondary ul,
-.result-panel-more ul {
+.result-panel-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
-}
-
-.result-panel-secondary-item {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-  min-height: var(--tap-target-min);
-  background: var(--color-sign-white);
-  border-radius: var(--radius-sm);
-  padding: var(--space-2) var(--space-3);
-}
-
-.result-panel-secondary-badge {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 14px;
-  background: var(--color-sign-yellow);
-  color: var(--color-sign-black);
-  padding: 2px var(--space-2);
-  border-radius: var(--radius-sm);
-  white-space: nowrap;
-}
-
-.result-panel-secondary-meta {
-  color: var(--color-sign-black);
-  font-size: 13px;
 }
 
 .result-panel-more {
@@ -113,7 +53,7 @@
   content: '▾';
 }
 
-.result-panel-more ul {
+.result-panel-more .result-panel-list {
   margin-top: var(--space-2);
 }
 

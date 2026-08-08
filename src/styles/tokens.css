@@ -16,8 +16,6 @@
   --color-sign-yellow: #ffd400;
   --color-sign-yellow-dim: #c9a900;
   --color-sign-black: #0a0a0a;
-  /* secondary directional-sign surface (white/black, vs. the primary yellow/black panel) */
-  --color-sign-white: #f4f3ee;
 
   /* -- text -- */
   --color-text: #f2f2ef;

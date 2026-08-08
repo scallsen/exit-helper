@@ -69,10 +69,6 @@
   gap: 2px;
 }
 
-.exit-card-nearby li::before {
-  content: '· ';
-}
-
 .exit-card-empty {
   margin: var(--space-1) 0 0;
   color: var(--color-text-muted);

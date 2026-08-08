@@ -1,0 +1,234 @@
+[
+  {
+    "id": "exit.Ochanomizu.5326377136",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "label": "Exit 1",
+    "lat": 35.7006647,
+    "lon": 139.7659276
+  },
+  {
+    "id": "exit.Ochanomizu.7018312835",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "label": "聖橋口",
+    "lat": 35.6995155,
+    "lon": 139.765034
+  },
+  {
+    "id": "exit.Ochanomizu.2744987519",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "label": "Exit 3",
+    "lat": 35.6981024,
+    "lon": 139.765268
+  },
+  {
+    "id": "exit.Ochanomizu.5504160551",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "label": "Exit 4",
+    "lat": 35.6981728,
+    "lon": 139.7651447
+  },
+  {
+    "id": "exit.Ochanomizu.13611007925",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "label": "Exit 5",
+    "lat": 35.699159,
+    "lon": 139.7641887
+  },
+  {
+    "id": "exit.Ochanomizu.13611007924",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "label": "Exit 6",
+    "lat": 35.6993602,
+    "lon": 139.7642976
+  },
+  {
+    "id": "exit.Ochanomizu.6150973323",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "label": "Exit 7",
+    "lat": 35.6995965,
+    "lon": 139.763724
+  },
+  {
+    "id": "exit.Ochanomizu.6988063075",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "label": "御茶ノ水橋口",
+    "lat": 35.6999152,
+    "lon": 139.7636624
+  },
+  {
+    "id": "exit.Ochanomizu.6150699510",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "label": "Exit 9",
+    "lat": 35.7007974,
+    "lon": 139.7640614
+  },
+  {
+    "id": "exit.Suidobashi.6988075434",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 1",
+    "lat": 35.7019447,
+    "lon": 139.7549624
+  },
+  {
+    "id": "exit.Suidobashi.11622932594",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 2",
+    "lat": 35.7017928,
+    "lon": 139.7540274
+  },
+  {
+    "id": "exit.Suidobashi.11622932593",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 3",
+    "lat": 35.70172,
+    "lon": 139.7541036
+  },
+  {
+    "id": "exit.Suidobashi.11621660335",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 4",
+    "lat": 35.701589,
+    "lon": 139.7521453
+  },
+  {
+    "id": "exit.Suidobashi.11621660334",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 5",
+    "lat": 35.7016073,
+    "lon": 139.7521359
+  },
+  {
+    "id": "exit.Suidobashi.11621660331",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 6",
+    "lat": 35.7016306,
+    "lon": 139.75212
+  },
+  {
+    "id": "exit.Suidobashi.11621660332",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 7",
+    "lat": 35.7016764,
+    "lon": 139.7520966
+  },
+  {
+    "id": "exit.Suidobashi.11621660321",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 8",
+    "lat": 35.701609,
+    "lon": 139.7515887
+  },
+  {
+    "id": "exit.Suidobashi.11621660326",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 9",
+    "lat": 35.7017703,
+    "lon": 139.7520377
+  },
+  {
+    "id": "exit.Suidobashi.11621660308",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 10",
+    "lat": 35.7017163,
+    "lon": 139.7517078
+  },
+  {
+    "id": "exit.Suidobashi.11621660325",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 11",
+    "lat": 35.7017196,
+    "lon": 139.7516058
+  },
+  {
+    "id": "exit.Suidobashi.11621660313",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 12",
+    "lat": 35.7017417,
+    "lon": 139.7516718
+  },
+  {
+    "id": "exit.Suidobashi.11621660322",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 13",
+    "lat": 35.7018303,
+    "lon": 139.751704
+  },
+  {
+    "id": "exit.Suidobashi.11621660324",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 14",
+    "lat": 35.701842,
+    "lon": 139.7515043
+  },
+  {
+    "id": "exit.Suidobashi.6988075429",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 15",
+    "lat": 35.7020695,
+    "lon": 139.7521468
+  },
+  {
+    "id": "exit.Suidobashi.10745181390",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 16",
+    "lat": 35.7023319,
+    "lon": 139.7523845
+  },
+  {
+    "id": "exit.Suidobashi.3774753508",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "label": "Exit 17",
+    "lat": 35.7035126,
+    "lon": 139.7532983
+  },
+  {
+    "id": "exit.Yotsuya.7623482161",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "label": "Exit 1",
+    "lat": 35.6859584,
+    "lon": 139.7300904,
+    "notes": "Step-free access"
+  },
+  {
+    "id": "exit.Yotsuya.13928541306",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "label": "Exit 2",
+    "lat": 35.6861341,
+    "lon": 139.7305079
+  },
+  {
+    "id": "exit.Yotsuya.13928541305",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "label": "Exit 3",
+    "lat": 35.6861342,
+    "lon": 139.7305928
+  },
+  {
+    "id": "exit.Yotsuya.13928541317",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "label": "Exit 4",
+    "lat": 35.686036,
+    "lon": 139.7306199
+  },
+  {
+    "id": "exit.Yotsuya.7623482147",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "label": "Exit 5",
+    "lat": 35.6860381,
+    "lon": 139.730973
+  },
+  {
+    "id": "exit.Yotsuya.10107934450",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "label": "Exit 6",
+    "lat": 35.6859827,
+    "lon": 139.7310075
+  },
+  {
+    "id": "exit.Yotsuya.7623482145",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "label": "Exit 7",
+    "lat": 35.6858879,
+    "lon": 139.7309252
+  }
+]

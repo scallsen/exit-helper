@@ -1,4 +1,4 @@
-# CLAUDE.md
+# AGENTS.md
 
 Guidance for working in this repo. Full product spec lives in [SPEC.md](./SPEC.md) — read that first for data sources, schema, and v1 scope. This file is the *rules*, not the *what*.
 
@@ -7,6 +7,8 @@ Guidance for working in this repo. Full product spec lives in [SPEC.md](./SPEC.m
 **Progressive disclosure is the law.** Every feature must be useful at the "station only" input level and get sharper as more input arrives — station+destination, +incoming line, +share mode. Never gate the basic case behind data that isn't there yet. If a feature can't degrade gracefully to zero extra input, reconsider it.
 
 **No live external calls per request.** ODPT and Overpass are hit by offline/periodic scripts in `scripts/`, writing normalized JSON to `data/`. The app and its ranking function run against that local dataset only — never call ODPT/Overpass from the frontend or from a per-request API path.
+
+**Destination search is station-bounded.** Destination autocomplete searches cached POIs for the selected station only. If the user cannot find the destination, offer a pin drop. Do not use public Nominatim for autocomplete, and do not add live Overpass search. A paid/provider fallback is acceptable only behind a server API that requires a selected station and hard-limits results to a small radius or bounding box around it.
 
 **Schema stays flat and additive.** `Exit.notes` (and similar loose fields) exist so accessibility info, curated "optimal car," or crowd corrections can attach later without a migration. Don't normalize these into new tables/relations preemptively — wait until there's a real second field that needs it.
 

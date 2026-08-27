@@ -66,6 +66,9 @@ a hard requirement.
   Coverage is community-maintained — expect it to be strong at major
   stations, thinner elsewhere. Chuo-Sōbu stations should have reasonable
   coverage given how central the line is.
+- Use Overpass only in the offline data pull. Public Overpass instances are
+  not an application backend; the frontend must search cached station-scoped
+  POIs, not call Overpass per user lookup.
 
 ### 3. MLIT Hokonavi (ほこナビ) — optional, narrow coverage
 - https://www.hokonavi.go.jp/opendata/
@@ -117,6 +120,31 @@ without restructuring.
 2. For each station, query Overpass for exits + POIs within ~300m
 3. Normalize into the schema above, write to local JSON (or SQLite if the
    POI volume makes JSON unwieldy)
+
+**Destination search**:
+- Primary behavior: after station selection, search only the cached POIs for
+  that station. This keeps results near the station by construction and
+  avoids turning the app into a general map search product.
+- Search radius should be station-scoped, not global. Start around `300m`;
+  increase toward `500m` only if real station testing shows useful nearby
+  destinations are missing.
+- If the destination is not in the cached POI list, let the user drop a pin
+  on the station schematic / local map extent and rank exits from that pin.
+- Do not use public Nominatim for autocomplete. Its public usage policy does
+  not support client-side autocomplete, and it is too broad for this product
+  unless heavily bounded and proxied.
+- Do not add live Overpass destination search. Overpass remains an offline
+  ingest source only.
+- If cached POIs prove too sparse after testing, add a bounded server-side
+  provider fallback behind a thin API. The fallback must require a selected
+  station and must restrict results to a small circle or bounding box around
+  that station. Good candidates:
+  - Google Places API for best Tokyo POI coverage; use a circular
+    `locationRestriction` and distance ranking where available.
+  - Mapbox Search Box API for autocomplete; use `bbox`/radius as a hard
+    boundary, not only proximity bias.
+  - Geoapify for an OSM-derived alternative; use `filter=circle` plus
+    proximity bias.
 
 **Ranking function** (runs client-side or in a thin API layer, against the
 local dataset — no live external calls per lookup):

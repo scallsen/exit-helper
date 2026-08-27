@@ -175,9 +175,11 @@ function normalizeStreets(rawStreets, center, slug) {
     .filter(({ points }) => points.length >= 2)
     .map(({ way, points }) => {
       const name = way.tags?.name ?? way.tags?.['name:en']
+      const highway = way.tags?.highway
       return {
         id: `street.${slug}.${way.id}`,
         ...(name ? { name } : {}),
+        ...(highway ? { class: highway } : {}),
         points: points.map((p) => [p.lat, p.lon]),
       }
     })

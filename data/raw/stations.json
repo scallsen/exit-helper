@@ -1,29 +1,55 @@
 {
-  "_note": "Temporary manual seed standing in for scripts/fetch-odpt-stations.js step 1 output, since the ODPT developer account is still pending approval. lat/lon here are approximate search anchors only, NOT the source-of-truth station point — fetch-overpass-exits.js resolves the precise coordinate itself via Overpass. Delete this file and regenerate it with the real script once ODPT access lands; nothing downstream should need to change shape.",
+  "_note": "Station identity pulled from Seo-4d696b75/station_database (see scripts/fetch-odpt-stations.js) as a stand-in for the real ODPT call, since the ODPT developer account is still pending approval. lat/lon here are real station coordinates but still treated as approximate search anchors only, NOT the source-of-truth station point — fetch-overpass-exits.js resolves the precise coordinate itself via Overpass. Trimmed to the 5 stations that finished an Overpass pull before the public instance started refusing connections (see MAP_EXPLORATION.md-style notes in git history) — the full 39-station JR Chuo-Sobu seed this was generated from is reproducible via `npm run data:stations` (script pulls all of them; re-trim or let it run longer next time). Regenerate via `npm run data:stations` once ODPT access lands; nothing downstream should need to change shape.",
   "stations": [
+    {
+      "id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+      "name_en": "Akihabara",
+      "name_ja": "秋葉原",
+      "lat": 35.698619,
+      "lon": 139.773288,
+      "line_ids": [
+        "odpt.Railway:JR-East.ChuoSobu"
+      ]
+    },
+    {
+      "id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+      "name_en": "Asagaya",
+      "name_ja": "阿佐ケ谷",
+      "lat": 35.704818,
+      "lon": 139.635868,
+      "line_ids": [
+        "odpt.Railway:JR-East.ChuoSobu"
+      ]
+    },
     {
       "id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
       "name_en": "Ochanomizu",
       "name_ja": "御茶ノ水",
-      "lat": 35.6995,
-      "lon": 139.7649,
-      "line_ids": ["odpt.Railway:JR-East.ChuoSobu"]
+      "lat": 35.699605,
+      "lon": 139.764955,
+      "line_ids": [
+        "odpt.Railway:JR-East.ChuoSobu"
+      ]
     },
     {
       "id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
       "name_en": "Suidobashi",
       "name_ja": "水道橋",
-      "lat": 35.702,
-      "lon": 139.7531,
-      "line_ids": ["odpt.Railway:JR-East.ChuoSobu"]
+      "lat": 35.702039,
+      "lon": 139.754312,
+      "line_ids": [
+        "odpt.Railway:JR-East.ChuoSobu"
+      ]
     },
     {
       "id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
       "name_en": "Yotsuya",
       "name_ja": "四ツ谷",
-      "lat": 35.6857,
-      "lon": 139.7301,
-      "line_ids": ["odpt.Railway:JR-East.ChuoSobu"]
+      "lat": 35.686041,
+      "lon": 139.730644,
+      "line_ids": [
+        "odpt.Railway:JR-East.ChuoSobu"
+      ]
     }
   ]
 }

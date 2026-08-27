@@ -7,7 +7,7 @@
 // by station. Writes one raw JSON file per station to data/raw/overpass/;
 // normalize.js (step 3) turns this into the Station/Exit/POI schema.
 
-import { mkdir, readFile, writeFile } from 'node:fs/promises'
+import { access, mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -202,9 +202,23 @@ async function fetchOverpassExitsAndPois() {
   await mkdir(OUT_DIR, { recursive: true })
 
   for (const station of seed.stations) {
-    const raw = await fetchStation(station)
     const slug = station.id.split('.').pop()
     const outPath = path.join(OUT_DIR, `${slug}.json`)
+
+    // Resumable: the public Overpass instance rate-limits/refuses connections
+    // hard enough (429/504, occasionally ECONNREFUSED outright) that a full
+    // 39-station run can die partway through. Re-running should pick up
+    // where it left off instead of re-spending requests on stations already
+    // pulled.
+    try {
+      await access(outPath)
+      console.log(`\n${station.name_en} (${station.name_ja}) — already pulled, skipping`)
+      continue
+    } catch {
+      // not yet pulled
+    }
+
+    const raw = await fetchStation(station)
     await writeFile(outPath, JSON.stringify(raw, null, 2))
     console.log(`  wrote ${path.relative(process.cwd(), outPath)}`)
     await sleep(2000)

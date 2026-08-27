@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import ExitCard from './ExitCard.jsx'
 import NavigateLink from './NavigateLink.jsx'
 import ShareButton from './ShareButton.jsx'
@@ -21,14 +20,17 @@ function alternateMeta(ranked) {
 // Navigate/Share follow whichever exit is selected — primary by default,
 // but clicking any other exit card makes it the target instead, so
 // "get me to the exit I'm actually using" isn't locked to whatever the
-// ranking picked.
-export default function ResultPanel({ station, destination, primary, alternates, farther = [] }) {
-  const [selectedExitId, setSelectedExitId] = useState(primary?.exit.id ?? null)
-
-  useEffect(() => {
-    if (primary) setSelectedExitId(primary.exit.id)
-  }, [primary])
-
+// ranking picked. Selection itself lives in App.jsx (not here) so the
+// station map can stay in sync and auto-center on the same exit.
+export default function ResultPanel({
+  station,
+  destination,
+  primary,
+  alternates,
+  farther = [],
+  selectedExitId,
+  onSelectExit,
+}) {
   if (!primary) return null
 
   function renderCard(ranked, state, extra = {}) {
@@ -38,7 +40,7 @@ export default function ResultPanel({ station, destination, primary, alternates,
         exit={ranked.exit}
         state={state}
         selected={selectedExitId === ranked.exit.id}
-        onSelect={() => setSelectedExitId(ranked.exit.id)}
+        onSelect={() => onSelectExit(ranked.exit.id)}
         action={
           <div className="result-panel-actions">
             <div className="navigate-links">

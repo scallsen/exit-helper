@@ -1,5 +1,230 @@
 [
   {
+    "id": "exit.Akihabara.5371455197",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 1",
+    "lat": 35.699507,
+    "lon": 139.7746424
+  },
+  {
+    "id": "exit.Akihabara.13164758791",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 2",
+    "lat": 35.6991434,
+    "lon": 139.7745297
+  },
+  {
+    "id": "exit.Akihabara.12923457356",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "ヨドバシカメラ マルチメディアAkiba つくば線口",
+    "lat": 35.699154,
+    "lon": 139.7745567
+  },
+  {
+    "id": "exit.Akihabara.600364640",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 4",
+    "lat": 35.6985264,
+    "lon": 139.7744476
+  },
+  {
+    "id": "exit.Akihabara.12909303994",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 5",
+    "lat": 35.6983961,
+    "lon": 139.7749559
+  },
+  {
+    "id": "exit.Akihabara.12913958522",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 6",
+    "lat": 35.6982682,
+    "lon": 139.7748829
+  },
+  {
+    "id": "exit.Akihabara.13451543382",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 7",
+    "lat": 35.6980352,
+    "lon": 139.7752067
+  },
+  {
+    "id": "exit.Akihabara.12944652987",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "アキバ・トリム 2階出入口",
+    "lat": 35.6979552,
+    "lon": 139.7737713
+  },
+  {
+    "id": "exit.Akihabara.12944652993",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "アキバ・トリム 1階出入口",
+    "lat": 35.6979104,
+    "lon": 139.7737699
+  },
+  {
+    "id": "exit.Akihabara.12906074145",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 10",
+    "lat": 35.698137,
+    "lon": 139.7727592
+  },
+  {
+    "id": "exit.Akihabara.13620392518",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 11",
+    "lat": 35.6980328,
+    "lon": 139.7725978
+  },
+  {
+    "id": "exit.Akihabara.13062596356",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 12",
+    "lat": 35.6979966,
+    "lon": 139.7724809
+  },
+  {
+    "id": "exit.Akihabara.1033069895",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 13",
+    "lat": 35.6980983,
+    "lon": 139.7724352
+  },
+  {
+    "id": "exit.Akihabara.4358216614",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 14",
+    "lat": 35.6981014,
+    "lon": 139.7719917,
+    "notes": "Step-free access"
+  },
+  {
+    "id": "exit.Akihabara.6783719820",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 15",
+    "lat": 35.6982636,
+    "lon": 139.772506
+  },
+  {
+    "id": "exit.Akihabara.12896396883",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 16",
+    "lat": 35.6982916,
+    "lon": 139.7724811
+  },
+  {
+    "id": "exit.Akihabara.12896921934",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 17",
+    "lat": 35.6982698,
+    "lon": 139.7721753
+  },
+  {
+    "id": "exit.Akihabara.12960962080",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "アトレ秋葉原1 搬入口",
+    "lat": 35.6982727,
+    "lon": 139.7720199
+  },
+  {
+    "id": "exit.Akihabara.12944802799",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 19",
+    "lat": 35.6984103,
+    "lon": 139.7725034
+  },
+  {
+    "id": "exit.Akihabara.11743269068",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 20",
+    "lat": 35.6986563,
+    "lon": 139.7708659
+  },
+  {
+    "id": "exit.Akihabara.13364005453",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 21",
+    "lat": 35.6987097,
+    "lon": 139.7710869
+  },
+  {
+    "id": "exit.Akihabara.13062596349",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 22",
+    "lat": 35.6984851,
+    "lon": 139.7724385
+  },
+  {
+    "id": "exit.Akihabara.9372022524",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 23",
+    "lat": 35.6985369,
+    "lon": 139.7722076
+  },
+  {
+    "id": "exit.Akihabara.13094408827",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 24",
+    "lat": 35.6984434,
+    "lon": 139.7727286
+  },
+  {
+    "id": "exit.Akihabara.6783719821",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 25",
+    "lat": 35.6985772,
+    "lon": 139.7725251
+  },
+  {
+    "id": "exit.Akihabara.2272548386",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 26",
+    "lat": 35.6991943,
+    "lon": 139.7711255
+  },
+  {
+    "id": "exit.Akihabara.6243154794",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 27",
+    "lat": 35.6986626,
+    "lon": 139.7723721
+  },
+  {
+    "id": "exit.Akihabara.6241692306",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 28",
+    "lat": 35.6994368,
+    "lon": 139.7715509
+  },
+  {
+    "id": "exit.Akihabara.12906074133",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "label": "Exit 29",
+    "lat": 35.6989858,
+    "lon": 139.7729097
+  },
+  {
+    "id": "exit.Asagaya.4339478987",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "label": "Exit 1",
+    "lat": 35.7050933,
+    "lon": 139.6362772
+  },
+  {
+    "id": "exit.Asagaya.6988144606",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "label": "Exit 2",
+    "lat": 35.7049293,
+    "lon": 139.6361365
+  },
+  {
+    "id": "exit.Asagaya.4339479390",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "label": "Exit 3",
+    "lat": 35.7047927,
+    "lon": 139.6362889
+  },
+  {
     "id": "exit.Ochanomizu.5326377136",
     "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
     "label": "Exit 1",

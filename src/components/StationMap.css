@@ -1,4 +1,5 @@
 .station-map {
+  position: relative;
   width: 100%;
   aspect-ratio: 1;
   max-width: 420px;
@@ -6,34 +7,86 @@
   background: var(--color-bg-inset);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-md);
+  overflow: hidden;
 }
 
 .station-map-svg {
   width: 100%;
   height: 100%;
   display: block;
+  cursor: grab;
+  /* Let pointer events drive pan/zoom instead of the browser's own
+     scroll/pinch handling on touch. */
+  touch-action: none;
+}
+
+.station-map-svg:active {
+  cursor: grabbing;
+}
+
+.station-map-controls {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.station-map-controls button {
+  min-width: var(--tap-target-min);
+  min-height: var(--tap-target-min);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-elevated);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.station-map-controls .station-map-control-fit {
+  font-size: 11px;
 }
 
 .station-map-grid-dot {
   fill: var(--color-border);
 }
 
+/* non-scaling-stroke keeps line weight constant in screen pixels as the
+   map is zoomed — without it, a 2.5x zoom also makes borders 2.5x thicker,
+   which reads as blurry/heavy rather than "zoomed in." Applies to context
+   geometry (streets/footprint/platform) only — markers (exits, POIs,
+   destination) scale fully, fill and border together, like everything
+   else on the map. */
 .station-map-street {
   fill: none;
-  stroke: var(--color-border);
-  stroke-width: 1;
+  stroke: var(--color-text-muted);
+  stroke-width: 1.75;
   stroke-linecap: square;
-  opacity: 0.55;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.675;
 }
 
-/* Brighter/thicker than streets on purpose — at matching weight the two
-   were visually indistinguishable, and the building outline is the more
-   important shape to read at a glance. */
+.station-map-street-label {
+  fill: var(--color-text-muted);
+  font-family: var(--font-body);
+  font-size: 8px;
+  text-anchor: middle;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Thicker than streets on purpose, plus a fill — the building outline is
+   the more important shape to read at a glance, so it needs to win against
+   the street network layered under it. */
 .station-map-footprint {
   fill: var(--color-bg-elevated);
   stroke: var(--color-text-muted);
-  stroke-width: 2;
+  stroke-width: 2.5;
   stroke-linejoin: miter;
+  vector-effect: non-scaling-stroke;
 }
 
 .station-map-platform {
@@ -41,6 +94,7 @@
   stroke: var(--color-text-muted);
   stroke-width: 3;
   stroke-linecap: square;
+  vector-effect: non-scaling-stroke;
   opacity: 0.5;
 }
 
@@ -52,6 +106,7 @@
   stroke: var(--color-sign-yellow-dim);
   stroke-width: 1.5;
   stroke-dasharray: 3 3;
+  vector-effect: non-scaling-stroke;
 }
 
 .station-map-exit rect {
@@ -59,6 +114,15 @@
   stroke: var(--color-sign-black);
   stroke-width: 1.5;
   cursor: pointer;
+}
+
+.station-map-exit-number {
+  fill: var(--color-text-on-sign);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 9px;
+  pointer-events: none;
+  user-select: none;
 }
 
 .station-map-exit-label {

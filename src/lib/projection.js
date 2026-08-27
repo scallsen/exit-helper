@@ -56,6 +56,13 @@ export function projectPoints(center, points, opts = {}) {
 // (building footprint, platforms, streets) read as blocky/stepped rather
 // than smooth OSM curves — reinforces the dot-matrix identity (see
 // CLAUDE.md).  Exit/POI markers are NOT snapped — only context geometry.
-export function snapToGrid(value, step = 8) {
+//
+// Step was originally 8px, which for a real (not hand-drawn) OSM building
+// outline collapses too many adjacent vertices onto the same grid cell —
+// verified against real footprint data: an 8px step made 38-64% of a
+// station's outline points duplicate their neighbor, which is what was
+// making real footprints look wrong (see MAP_EXPLORATION.md). 4px keeps the
+// blocky read while preserving enough of the outline to stay recognizable.
+export function snapToGrid(value, step = 4) {
   return Math.round(value / step) * step
 }

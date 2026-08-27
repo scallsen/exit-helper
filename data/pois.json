@@ -1,5 +1,491 @@
 [
   {
+    "id": "poi.Akihabara.1048882804",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Akihabara Medical Clinic",
+    "lat": 35.6972162,
+    "lon": 139.7724786,
+    "category": "hospital",
+    "nearest_exit_id": "exit.Akihabara.13062596356"
+  },
+  {
+    "id": "poi.Akihabara.1915127703",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "SILK HAT AKIBA",
+    "lat": 35.6987113,
+    "lon": 139.7710243,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.13364005453"
+  },
+  {
+    "id": "poi.Akihabara.1915268184",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Hirose Entertainment Yard",
+    "lat": 35.6990461,
+    "lon": 139.7708377,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.2272548386"
+  },
+  {
+    "id": "poi.Akihabara.2018264145",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Remains of Kanda Marketplace",
+    "lat": 35.6996624,
+    "lon": 139.7726598,
+    "category": "memorial",
+    "nearest_exit_id": "exit.Akihabara.12906074133"
+  },
+  {
+    "id": "poi.Akihabara.2263941712",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "福島屋",
+    "lat": 35.7001355,
+    "lon": 139.7723469,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Akihabara.6241692306"
+  },
+  {
+    "id": "poi.Akihabara.2724694059",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Nippon Hyakkaten Shokuhinkan",
+    "lat": 35.6997287,
+    "lon": 139.7731785,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Akihabara.12906074133"
+  },
+  {
+    "id": "poi.Akihabara.4468324689",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Vending machine mart",
+    "lat": 35.6966311,
+    "lon": 139.7713849,
+    "category": "artwork",
+    "nearest_exit_id": "exit.Akihabara.4358216614"
+  },
+  {
+    "id": "poi.Akihabara.4553422390",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Club Sega",
+    "lat": 35.6980637,
+    "lon": 139.7724439,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.1033069895"
+  },
+  {
+    "id": "poi.Akihabara.4879949024",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "AKB48 Theater",
+    "lat": 35.7008075,
+    "lon": 139.7719621,
+    "category": "theatre",
+    "nearest_exit_id": "exit.Akihabara.6241692306"
+  },
+  {
+    "id": "poi.Akihabara.5071693018",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "二松学舎大学 Akiba Lab",
+    "lat": 35.6991276,
+    "lon": 139.7699627,
+    "category": "university",
+    "nearest_exit_id": "exit.Akihabara.11743269068"
+  },
+  {
+    "id": "poi.Akihabara.5147139423",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Clone Factory (Build a replica of yourself)",
+    "lat": 35.6974253,
+    "lon": 139.772526,
+    "category": "attraction",
+    "nearest_exit_id": "exit.Akihabara.13062596356"
+  },
+  {
+    "id": "poi.Akihabara.5760263315",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "東京レジャーランド秋葉原2号店",
+    "lat": 35.700663,
+    "lon": 139.7718022,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.6241692306"
+  },
+  {
+    "id": "poi.Akihabara.7656396948",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "GIGO5号館",
+    "lat": 35.6987515,
+    "lon": 139.770659,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.11743269068"
+  },
+  {
+    "id": "poi.Akihabara.8986264202",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "TOKiS",
+    "lat": 35.6995679,
+    "lon": 139.771037,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Akihabara.2272548386"
+  },
+  {
+    "id": "poi.Akihabara.9418883312",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Seijo Ishii",
+    "lat": 35.698441,
+    "lon": 139.772493,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Akihabara.12944802799"
+  },
+  {
+    "id": "poi.Akihabara.9432106579",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "AKIBA Culture's Theatre",
+    "lat": 35.6995077,
+    "lon": 139.770475,
+    "category": "theatre",
+    "nearest_exit_id": "exit.Akihabara.2272548386"
+  },
+  {
+    "id": "poi.Akihabara.10137268617",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Tokyo Leisure Land Akihabara",
+    "lat": 35.6987529,
+    "lon": 139.7701168,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.11743269068"
+  },
+  {
+    "id": "poi.Akihabara.10799014905",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Seekbase",
+    "lat": 35.7006728,
+    "lon": 139.7733378,
+    "category": "department_store",
+    "nearest_exit_id": "exit.Akihabara.5371455197"
+  },
+  {
+    "id": "poi.Akihabara.10799656705",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "RETRO:G Retro Games (GiGO 6F)",
+    "lat": 35.6992152,
+    "lon": 139.7709513,
+    "category": "attraction",
+    "nearest_exit_id": "exit.Akihabara.2272548386"
+  },
+  {
+    "id": "poi.Akihabara.11017003645",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "GIGO2号館",
+    "lat": 35.697745,
+    "lon": 139.7714492,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.4358216614"
+  },
+  {
+    "id": "poi.Akihabara.11047734030",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Konpira Shrine",
+    "lat": 35.6967928,
+    "lon": 139.7736283,
+    "category": "wayside_shrine",
+    "nearest_exit_id": "exit.Akihabara.12944652993"
+  },
+  {
+    "id": "poi.Akihabara.11871381160",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Taito Station",
+    "lat": 35.6981297,
+    "lon": 139.7731211,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.12906074145"
+  },
+  {
+    "id": "poi.Akihabara.13062596348",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "アイドルマスターツアーズ",
+    "lat": 35.6984774,
+    "lon": 139.7724399,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.13062596349"
+  },
+  {
+    "id": "poi.Akihabara.13431597346",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Tanuki",
+    "lat": 35.6967201,
+    "lon": 139.7736098,
+    "category": "artwork",
+    "nearest_exit_id": "exit.Akihabara.12944652993"
+  },
+  {
+    "id": "poi.Akihabara.13431597347",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Tanuki",
+    "lat": 35.6967205,
+    "lon": 139.7735826,
+    "category": "artwork",
+    "nearest_exit_id": "exit.Akihabara.12944652993"
+  },
+  {
+    "id": "poi.Akihabara.13717730501",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "EBIHARA",
+    "lat": 35.6964047,
+    "lon": 139.7744904,
+    "category": "gallery",
+    "nearest_exit_id": "exit.Akihabara.12944652993"
+  },
+  {
+    "id": "poi.Akihabara.46983897",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Yanagimori Jinja Shrine",
+    "lat": 35.696718366666666,
+    "lon": 139.77341755833334,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Akihabara.12944652993"
+  },
+  {
+    "id": "poi.Akihabara.47072154",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Yodobashi Multimedia Akiba",
+    "lat": 35.6988312030303,
+    "lon": 139.77467146969698,
+    "category": "mall",
+    "nearest_exit_id": "exit.Akihabara.13164758791"
+  },
+  {
+    "id": "poi.Akihabara.47127856",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Akihabara Radio Kaikan",
+    "lat": 35.69795536666667,
+    "lon": 139.77193524999998,
+    "category": "mall",
+    "nearest_exit_id": "exit.Akihabara.4358216614"
+  },
+  {
+    "id": "poi.Akihabara.47127861",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "秋葉原公園",
+    "lat": 35.69787086,
+    "lon": 139.77492736000002,
+    "category": "park",
+    "nearest_exit_id": "exit.Akihabara.13451543382"
+  },
+  {
+    "id": "poi.Akihabara.87148124",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Akiba Cultures Zone",
+    "lat": 35.699519162499996,
+    "lon": 139.7703973875,
+    "category": "mall",
+    "nearest_exit_id": "exit.Akihabara.2272548386"
+  },
+  {
+    "id": "poi.Akihabara.89028748",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Atre Akihabara 1",
+    "lat": 35.69839457647059,
+    "lon": 139.7724022411765,
+    "category": "mall",
+    "nearest_exit_id": "exit.Akihabara.12944802799"
+  },
+  {
+    "id": "poi.Akihabara.89181581",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "GIGO3号館",
+    "lat": 35.6992707,
+    "lon": 139.77097937,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.2272548386"
+  },
+  {
+    "id": "poi.Akihabara.143144113",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Akihabara chuo reiwa Hiroba (Akihabara Central Reiwa Square)",
+    "lat": 35.69957542,
+    "lon": 139.77487476,
+    "category": "park",
+    "nearest_exit_id": "exit.Akihabara.5371455197"
+  },
+  {
+    "id": "poi.Akihabara.217379772",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Taito Station",
+    "lat": 35.70024368,
+    "lon": 139.77176154,
+    "category": "amusement_arcade",
+    "nearest_exit_id": "exit.Akihabara.6241692306"
+  },
+  {
+    "id": "poi.Akihabara.544733763",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Akihabara",
+    "name": "Mansei Bridge",
+    "lat": 35.697097060000004,
+    "lon": 139.77100108,
+    "category": "attraction",
+    "nearest_exit_id": "exit.Akihabara.4358216614"
+  },
+  {
+    "id": "poi.Asagaya.1020438976",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "西蓮寺",
+    "lat": 35.7045225,
+    "lon": 139.6351854,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Asagaya.6988144606"
+  },
+  {
+    "id": "poi.Asagaya.1789111521",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "Seiyu",
+    "lat": 35.7056878,
+    "lon": 139.6367421,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
+    "id": "poi.Asagaya.1870457186",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "世尊院正覚寺",
+    "lat": 35.7067972,
+    "lon": 139.6365737,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
+    "id": "poi.Asagaya.2498631681",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "Ito-Yokado",
+    "lat": 35.7056614,
+    "lon": 139.6360992,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
+    "id": "poi.Asagaya.2501840834",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "トーア セントラル フィットネスクラブ",
+    "lat": 35.7052925,
+    "lon": 139.6350288,
+    "category": "sports_centre",
+    "nearest_exit_id": "exit.Asagaya.6988144606"
+  },
+  {
+    "id": "poi.Asagaya.2923511940",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "バザール あさがや",
+    "lat": 35.705393,
+    "lon": 139.6378118,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
+    "id": "poi.Asagaya.4889738278",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "EVEREST SPICE & HALAL FOOD",
+    "lat": 35.7042578,
+    "lon": 139.6345809,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Asagaya.6988144606"
+  },
+  {
+    "id": "poi.Asagaya.5004544827",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "新鮮館",
+    "lat": 35.7048546,
+    "lon": 139.6349764,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Asagaya.6988144606"
+  },
+  {
+    "id": "poi.Asagaya.5116257070",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "OPPO",
+    "lat": 35.7061522,
+    "lon": 139.635314,
+    "category": "gallery",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
+    "id": "poi.Asagaya.6275430114",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "伽倻",
+    "lat": 35.705256,
+    "lon": 139.6376224,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
+    "id": "poi.Asagaya.7162217947",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "ユジク",
+    "lat": 35.7058617,
+    "lon": 139.635087,
+    "category": "cinema",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
+    "id": "poi.Asagaya.9851092303",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "My Basket",
+    "lat": 35.7037017,
+    "lon": 139.6363793,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Asagaya.4339479390"
+  },
+  {
+    "id": "poi.Asagaya.13264825701",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "Asagaya",
+    "lat": 35.7032367,
+    "lon": 139.6370251,
+    "category": "theatre",
+    "nearest_exit_id": "exit.Asagaya.4339479390"
+  },
+  {
+    "id": "poi.Asagaya.13743034946",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "河北総合病院",
+    "lat": 35.7061126,
+    "lon": 139.6379235,
+    "category": "hospital",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
+    "id": "poi.Asagaya.263949100",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "ビーンズぷらす",
+    "lat": 35.704934228571425,
+    "lon": 139.63615814285714,
+    "category": "mall",
+    "nearest_exit_id": "exit.Asagaya.6988144606"
+  },
+  {
+    "id": "poi.Asagaya.364603042",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "Asagaya Shinmeiguu",
+    "lat": 35.70732211428571,
+    "lon": 139.63697295714286,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
+    "id": "poi.Asagaya.511668040",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "ビーンズくるく",
+    "lat": 35.704837166666664,
+    "lon": 139.6353875,
+    "category": "mall",
+    "nearest_exit_id": "exit.Asagaya.6988144606"
+  },
+  {
+    "id": "poi.Asagaya.511668041",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Asagaya",
+    "name": "ビーンズてくて",
+    "lat": 35.7049728,
+    "lon": 139.6372735333333,
+    "category": "mall",
+    "nearest_exit_id": "exit.Asagaya.4339478987"
+  },
+  {
     "id": "poi.Ochanomizu.1130530506",
     "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
     "name": "Ochanimizu Acupuncture College",

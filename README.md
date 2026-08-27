@@ -12,6 +12,8 @@ into the app.
 See [SPEC.md](./SPEC.md) for the full product spec and [AGENTS.md](./AGENTS.md)
 for repo conventions.
 
+<img width="462" height="761" alt="Screenshot 2026-08-27 at 8 02 06 PM" src="https://github.com/user-attachments/assets/7dc2e7b1-932b-4cd7-a7c5-ddbd19b56ded" />
+
 ## How It Works
 
 The app follows a progressive-disclosure model:

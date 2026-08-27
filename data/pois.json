@@ -1,0 +1,722 @@
+[
+  {
+    "id": "poi.Ochanomizu.1130530506",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Ochanimizu Acupuncture College",
+    "lat": 35.7016017,
+    "lon": 139.766204,
+    "category": "college",
+    "nearest_exit_id": "exit.Ochanomizu.5326377136"
+  },
+  {
+    "id": "poi.Ochanomizu.1420766935",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Kyoundo Hospital",
+    "lat": 35.698402,
+    "lon": 139.762933,
+    "category": "hospital",
+    "nearest_exit_id": "exit.Ochanomizu.13611007925"
+  },
+  {
+    "id": "poi.Ochanomizu.1420771222",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Nagura Clinic",
+    "lat": 35.697486,
+    "lon": 139.766294,
+    "category": "hospital",
+    "nearest_exit_id": "exit.Ochanomizu.2744987519"
+  },
+  {
+    "id": "poi.Ochanomizu.1420781044",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "College of Science and Technology, Nihon University, Surugadai Campus",
+    "lat": 35.6976834,
+    "lon": 139.7647246,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.5504160551"
+  },
+  {
+    "id": "poi.Ochanomizu.1420781347",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Meiji University Museum",
+    "lat": 35.6986987,
+    "lon": 139.7621517,
+    "category": "museum",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.1420781349",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Meiji University",
+    "lat": 35.698451,
+    "lon": 139.762158,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.1420781350",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Meiji University",
+    "lat": 35.6984381,
+    "lon": 139.7621985,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.1420781351",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Meiji University",
+    "lat": 35.69847,
+    "lon": 139.762118,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.1420781352",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Meiji University",
+    "lat": 35.69847,
+    "lon": 139.762198,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.1420781353",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Meiji University",
+    "lat": 35.698438,
+    "lon": 139.762118,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.1420781354",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Meiji University",
+    "lat": 35.698421,
+    "lon": 139.762158,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.1420782890",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Institute of Science Tokyo Hospital",
+    "lat": 35.7010409,
+    "lon": 139.7641648,
+    "category": "hospital",
+    "nearest_exit_id": "exit.Ochanomizu.6150699510"
+  },
+  {
+    "id": "poi.Ochanomizu.1420782910",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Faculty of Medicine",
+    "lat": 35.701863,
+    "lon": 139.764132,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150699510"
+  },
+  {
+    "id": "poi.Ochanomizu.1420782919",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Faculty of Dentistry",
+    "lat": 35.7009614,
+    "lon": 139.7648143,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150699510"
+  },
+  {
+    "id": "poi.Ochanomizu.2204921527",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Nihon University School of Dentistry Dental Hospital",
+    "lat": 35.69826,
+    "lon": 139.7634569,
+    "category": "hospital",
+    "nearest_exit_id": "exit.Ochanomizu.13611007925"
+  },
+  {
+    "id": "poi.Ochanomizu.3160434577",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "お茶の水碑",
+    "lat": 35.6998838,
+    "lon": 139.7632085,
+    "category": "memorial",
+    "nearest_exit_id": "exit.Ochanomizu.6988063075"
+  },
+  {
+    "id": "poi.Ochanomizu.3160436370",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Birth Place of Modern Education",
+    "lat": 35.700448,
+    "lon": 139.765464,
+    "category": "memorial",
+    "nearest_exit_id": "exit.Ochanomizu.5326377136"
+  },
+  {
+    "id": "poi.Ochanomizu.3888596381",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Kozukenosuke Oguri mansion trace (place of birth)",
+    "lat": 35.6977339,
+    "lon": 139.7625607,
+    "category": "building",
+    "nearest_exit_id": "exit.Ochanomizu.13611007925"
+  },
+  {
+    "id": "poi.Ochanomizu.4059137885",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Hosei University birthplace",
+    "lat": 35.698663,
+    "lon": 139.7628413,
+    "category": "memorial",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.4315444329",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Seijo Ishii",
+    "lat": 35.6989496,
+    "lon": 139.766004,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Ochanomizu.7018312835"
+  },
+  {
+    "id": "poi.Ochanomizu.4970007440",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "聖橋の由来",
+    "lat": 35.7002338,
+    "lon": 139.7654355,
+    "category": "memorial",
+    "nearest_exit_id": "exit.Ochanomizu.5326377136"
+  },
+  {
+    "id": "poi.Ochanomizu.4999139710",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "B-PUMP",
+    "lat": 35.699909,
+    "lon": 139.768037,
+    "category": "sports_centre",
+    "nearest_exit_id": "exit.Ochanomizu.5326377136"
+  },
+  {
+    "id": "poi.Ochanomizu.5481946623",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Chuo University",
+    "lat": 35.6976659,
+    "lon": 139.7642775,
+    "category": "college",
+    "nearest_exit_id": "exit.Ochanomizu.5504160551"
+  },
+  {
+    "id": "poi.Ochanomizu.5500138988",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "お茶の水貝塚",
+    "lat": 35.7006543,
+    "lon": 139.7641041,
+    "category": "memorial",
+    "nearest_exit_id": "exit.Ochanomizu.6150699510"
+  },
+  {
+    "id": "poi.Ochanomizu.5615113577",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "UTB映像アカデミー",
+    "lat": 35.6997461,
+    "lon": 139.7630389,
+    "category": "college",
+    "nearest_exit_id": "exit.Ochanomizu.6988063075"
+  },
+  {
+    "id": "poi.Ochanomizu.5615113578",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "ESPギター・クラフト・アカデミー",
+    "lat": 35.6997288,
+    "lon": 139.7630341,
+    "category": "college",
+    "nearest_exit_id": "exit.Ochanomizu.6988063075"
+  },
+  {
+    "id": "poi.Ochanomizu.6150699512",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "ヒポクラテス",
+    "lat": 35.7014072,
+    "lon": 139.7641783,
+    "category": "artwork",
+    "nearest_exit_id": "exit.Ochanomizu.6150699510"
+  },
+  {
+    "id": "poi.Ochanomizu.6153432710",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "AMAZING SCHOOL JUR",
+    "lat": 35.6996072,
+    "lon": 139.7676351,
+    "category": "college",
+    "nearest_exit_id": "exit.Ochanomizu.5326377136"
+  },
+  {
+    "id": "poi.Ochanomizu.10185361577",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "雁木坂",
+    "lat": 35.6988686,
+    "lon": 139.7625954,
+    "category": "milestone",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.10761236505",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Nikolay Do",
+    "lat": 35.6980586,
+    "lon": 139.7657773,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Ochanomizu.2744987519"
+  },
+  {
+    "id": "poi.Ochanomizu.11890802484",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Multiple train tracks view",
+    "lat": 35.6997471,
+    "lon": 139.7656317,
+    "category": "viewpoint",
+    "nearest_exit_id": "exit.Ochanomizu.7018312835"
+  },
+  {
+    "id": "poi.Ochanomizu.13074874941",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Dr.Ochanomizu Manhole Cover",
+    "lat": 35.698318,
+    "lon": 139.7624652,
+    "category": "artwork",
+    "nearest_exit_id": "exit.Ochanomizu.13611007925"
+  },
+  {
+    "id": "poi.Ochanomizu.14030059807",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "H&S Golf School",
+    "lat": 35.6995418,
+    "lon": 139.763021,
+    "category": "sports_centre",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.46985717",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Yushimaseido Temple",
+    "lat": 35.700590874999996,
+    "lon": 139.7664055,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Ochanomizu.5326377136"
+  },
+  {
+    "id": "poi.Ochanomizu.52980054",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Institute of Science Tokyo - Yushima Campus",
+    "lat": 35.701461200000004,
+    "lon": 139.76437647894736,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150699510"
+  },
+  {
+    "id": "poi.Ochanomizu.67027571",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Kyoundo Hospital",
+    "lat": 35.698445183333334,
+    "lon": 139.76294046666666,
+    "category": "hospital",
+    "nearest_exit_id": "exit.Ochanomizu.13611007925"
+  },
+  {
+    "id": "poi.Ochanomizu.124081178",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Ochanomizu Park",
+    "lat": 35.70101486923076,
+    "lon": 139.76620673846153,
+    "category": "park",
+    "nearest_exit_id": "exit.Ochanomizu.5326377136"
+  },
+  {
+    "id": "poi.Ochanomizu.170401316",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Awajitei",
+    "lat": 35.69936271666667,
+    "lon": 139.76739451666666,
+    "category": "sports_centre",
+    "nearest_exit_id": "exit.Ochanomizu.5326377136"
+  },
+  {
+    "id": "poi.Ochanomizu.171480310",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Meiji University Global Front",
+    "lat": 35.699334,
+    "lon": 139.76228672,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.6150973323"
+  },
+  {
+    "id": "poi.Ochanomizu.210425258",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Nihon University School of Dentistry",
+    "lat": 35.69844086,
+    "lon": 139.76410386,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.13611007925"
+  },
+  {
+    "id": "poi.Ochanomizu.219877271",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Nihon University Hospital",
+    "lat": 35.697415899999996,
+    "lon": 139.76261842,
+    "category": "hospital",
+    "nearest_exit_id": "exit.Ochanomizu.13611007925"
+  },
+  {
+    "id": "poi.Ochanomizu.332338650",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Awaji Pocket Park",
+    "lat": 35.69717167368421,
+    "lon": 139.7670372894737,
+    "category": "park",
+    "nearest_exit_id": "exit.Ochanomizu.2744987519"
+  },
+  {
+    "id": "poi.Ochanomizu.443912175",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Gallery 蔵",
+    "lat": 35.69837698,
+    "lon": 139.7671731,
+    "category": "gallery",
+    "nearest_exit_id": "exit.Ochanomizu.2744987519"
+  },
+  {
+    "id": "poi.Ochanomizu.1044128868",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "デジタルハリウッド大学 駿河台キャンパス",
+    "lat": 35.698654399999995,
+    "lon": 139.7666604,
+    "category": "university",
+    "nearest_exit_id": "exit.Ochanomizu.2744987519"
+  },
+  {
+    "id": "poi.Ochanomizu.1383403061",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+    "name": "Ochabi Institute",
+    "lat": 35.700411880000004,
+    "lon": 139.76209999999998,
+    "category": "college",
+    "nearest_exit_id": "exit.Ochanomizu.6988063075"
+  },
+  {
+    "id": "poi.Suidobashi.1420781035",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "日本大学（その他）",
+    "lat": 35.699636,
+    "lon": 139.754809,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.11622932593"
+  },
+  {
+    "id": "poi.Suidobashi.1420781038",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "日本大学（商学部）",
+    "lat": 35.69959,
+    "lon": 139.754843,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.11622932593"
+  },
+  {
+    "id": "poi.Suidobashi.1420781040",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "日本大学（文理学部）",
+    "lat": 35.69954,
+    "lon": 139.754743,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.11622932593"
+  },
+  {
+    "id": "poi.Suidobashi.1420781042",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Nihon University College of Law",
+    "lat": 35.6996,
+    "lon": 139.754733,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.11622932593"
+  },
+  {
+    "id": "poi.Suidobashi.1420781043",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Nihon University College of Law",
+    "lat": 35.699707,
+    "lon": 139.754267,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.11622932593"
+  },
+  {
+    "id": "poi.Suidobashi.1420781045",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Nihon University College of Law",
+    "lat": 35.699569,
+    "lon": 139.754734,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.11622932593"
+  },
+  {
+    "id": "poi.Suidobashi.1420784148",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Tokyo Dental College Suidobashi Hospital",
+    "lat": 35.701355,
+    "lon": 139.754918,
+    "category": "hospital",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Suidobashi.1420800637",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "LEC Graduate School of Accounting",
+    "lat": 35.699763,
+    "lon": 139.754921,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.11622932593"
+  },
+  {
+    "id": "poi.Suidobashi.3343255435",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "ネイルスクール ラ・レベル",
+    "lat": 35.7013432,
+    "lon": 139.7556415,
+    "category": "college",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Suidobashi.3343292925",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Tokyo Dental College",
+    "lat": 35.7015468,
+    "lon": 139.7547839,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Suidobashi.3550414246",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Foundation Bricks Used for Tokyo Artillery Arsenal of Japanese Imperial Army",
+    "lat": 35.7040637,
+    "lon": 139.7532732,
+    "category": "memorial",
+    "nearest_exit_id": "exit.Suidobashi.3774753508"
+  },
+  {
+    "id": "poi.Suidobashi.3763483884",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Hosho No Theatre",
+    "lat": 35.7033909,
+    "lon": 139.7561751,
+    "category": "theatre",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Suidobashi.4258665703",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Tokyo Dental College Suidobashi New Building",
+    "lat": 35.7002068,
+    "lon": 139.7552957,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Suidobashi.4258668863",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Yoyogi Animation academy",
+    "lat": 35.7006302,
+    "lon": 139.7560557,
+    "category": "college",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Suidobashi.5340434078",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Tokyo Dome City Hall",
+    "lat": 35.7033222,
+    "lon": 139.7545794,
+    "category": "theatre",
+    "nearest_exit_id": "exit.Suidobashi.3774753508"
+  },
+  {
+    "id": "poi.Suidobashi.6256032285",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Space Travelium",
+    "lat": 35.7034876,
+    "lon": 139.7517679,
+    "category": "museum",
+    "nearest_exit_id": "exit.Suidobashi.3774753508"
+  },
+  {
+    "id": "poi.Suidobashi.6266978361",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "安全の誓い",
+    "lat": 35.7040142,
+    "lon": 139.7543375,
+    "category": "memorial",
+    "nearest_exit_id": "exit.Suidobashi.3774753508"
+  },
+  {
+    "id": "poi.Suidobashi.6266978363",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "錦秋稲荷大明神",
+    "lat": 35.7040398,
+    "lon": 139.7542778,
+    "category": "wayside_shrine",
+    "nearest_exit_id": "exit.Suidobashi.3774753508"
+  },
+  {
+    "id": "poi.Suidobashi.6539703668",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "金比羅宮東京分社",
+    "lat": 35.7036768,
+    "lon": 139.7557326,
+    "category": "memorial",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Suidobashi.20028328",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Tokyo Dome",
+    "lat": 35.70543893617021,
+    "lon": 139.75190501276595,
+    "category": "stadium",
+    "nearest_exit_id": "exit.Suidobashi.3774753508"
+  },
+  {
+    "id": "poi.Suidobashi.46986520",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Nihon University College of Law",
+    "lat": 35.699795699999996,
+    "lon": 139.75426672,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.11622932593"
+  },
+  {
+    "id": "poi.Suidobashi.171215879",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Nihon University College of Economics Building 7",
+    "lat": 35.7004576875,
+    "lon": 139.755173125,
+    "category": "university",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Suidobashi.374396948",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "Misaki Inari Shrine",
+    "lat": 35.701657125000004,
+    "lon": 139.754431875,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Suidobashi.11622932593"
+  },
+  {
+    "id": "poi.Suidobashi.696391916",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "金比羅宮東京分社",
+    "lat": 35.703820575,
+    "lon": 139.75591572500002,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Suidobashi.696391935",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+    "name": "水道橋 稲荷社",
+    "lat": 35.70359906,
+    "lon": 139.75582882,
+    "category": "wayside_shrine",
+    "nearest_exit_id": "exit.Suidobashi.6988075434"
+  },
+  {
+    "id": "poi.Yotsuya.4358349335",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "Seijo Ishii",
+    "lat": 35.6861303,
+    "lon": 139.7299623,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Yotsuya.7623482161"
+  },
+  {
+    "id": "poi.Yotsuya.11060934108",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "Maruetsu Petit",
+    "lat": 35.6864336,
+    "lon": 139.7269703,
+    "category": "supermarket",
+    "nearest_exit_id": "exit.Yotsuya.7623482161"
+  },
+  {
+    "id": "poi.Yotsuya.11061281326",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "鴻臚寺四谷",
+    "lat": 35.687805,
+    "lon": 139.7277762,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Yotsuya.7623482161"
+  },
+  {
+    "id": "poi.Yotsuya.11269005868",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "サンパウロ東京宣教センター",
+    "lat": 35.6857342,
+    "lon": 139.729083,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Yotsuya.7623482161"
+  },
+  {
+    "id": "poi.Yotsuya.54961730",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "Yoysuya Mitsuke",
+    "lat": 35.686225225,
+    "lon": 139.731174025,
+    "category": "ruins",
+    "nearest_exit_id": "exit.Yotsuya.7623482147"
+  },
+  {
+    "id": "poi.Yotsuya.145109193",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "Wakaba Higashi Park",
+    "lat": 35.68316176363636,
+    "lon": 139.7289588090909,
+    "category": "garden",
+    "nearest_exit_id": "exit.Yotsuya.7623482161"
+  },
+  {
+    "id": "poi.Yotsuya.179562477",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "Sophia University",
+    "lat": 35.68395974482758,
+    "lon": 139.73239103793102,
+    "category": "university",
+    "nearest_exit_id": "exit.Yotsuya.7623482145"
+  },
+  {
+    "id": "poi.Yotsuya.377728267",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "Kojimachi St. Ignatius Church",
+    "lat": 35.68513899999999,
+    "lon": 139.73125711612906,
+    "category": "place_of_worship",
+    "nearest_exit_id": "exit.Yotsuya.7623482145"
+  },
+  {
+    "id": "poi.Yotsuya.556414550",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "Yotsuya Mitsuke Park",
+    "lat": 35.68322945714286,
+    "lon": 139.72813551428573,
+    "category": "park",
+    "nearest_exit_id": "exit.Yotsuya.7623482161"
+  },
+  {
+    "id": "poi.Yotsuya.750631562",
+    "station_id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+    "name": "Atré Yotsuya",
+    "lat": 35.68616877777778,
+    "lon": 139.73016622222224,
+    "category": "mall",
+    "nearest_exit_id": "exit.Yotsuya.7623482161"
+  }
+]

@@ -1,0 +1,142 @@
+.exit-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-elevated);
+  overflow: hidden;
+}
+
+.exit-card-trigger {
+  display: block;
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+}
+
+.exit-card-trigger--clickable {
+  cursor: pointer;
+  min-height: var(--tap-target-min);
+}
+
+.exit-card-trigger--clickable:hover {
+  background: rgb(255 255 255 / 5%);
+}
+
+.exit-card-trigger--clickable:focus-visible {
+  outline: 2px solid var(--color-sign-yellow);
+  outline-offset: -2px;
+}
+
+.exit-card--promoted .exit-card-trigger--clickable:hover {
+  background: rgb(10 10 10 / 5%);
+}
+
+.exit-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+.exit-card-badge {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 14px;
+  background: var(--color-sign-yellow);
+  color: var(--color-sign-black);
+  padding: 2px var(--space-2);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.exit-card-note {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.exit-card-meta {
+  margin-top: var(--space-1);
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.exit-card-nearby {
+  list-style: none;
+  margin: var(--space-1) 0 0;
+  padding: 0;
+  color: var(--color-text-muted);
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.exit-card-empty {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-muted);
+  font-size: 13px;
+}
+
+.exit-card-action {
+  padding: var(--space-2) var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Promoted: the one recommendation — full yellow panel, largest type. */
+.exit-card--promoted {
+  background: var(--color-sign-yellow);
+  border-color: var(--color-sign-yellow);
+}
+
+.exit-card--promoted .exit-card-label {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  margin: 2px 0;
+}
+
+.exit-card--promoted .exit-card-label,
+.exit-card--promoted .exit-card-meta,
+.exit-card--promoted .exit-card-note {
+  color: var(--color-sign-black);
+}
+
+.exit-card--promoted .exit-card-meta {
+  opacity: 0.75;
+  font-size: 14px;
+}
+
+.exit-card--promoted .exit-card-action {
+  border-top-color: rgb(10 10 10 / 15%);
+}
+
+/* NavigateLink/ShareButton default to yellow-on-dark; override for the
+   yellow promoted panel so it isn't yellow text on a yellow background. */
+.exit-card--promoted .navigate-link,
+.exit-card--promoted .share-button-action {
+  border-color: var(--color-sign-black);
+  color: var(--color-sign-black);
+}
+
+.exit-card--promoted .navigate-link:hover,
+.exit-card--promoted .navigate-link:focus-visible,
+.exit-card--promoted .share-button-action:hover,
+.exit-card--promoted .share-button-action:focus-visible {
+  background: rgb(10 10 10 / 10%);
+}
+
+.exit-card--promoted .share-button-url {
+  color: var(--color-sign-black);
+  opacity: 0.7;
+}
+
+/* Low-priority: click a card to make it the share target instead of the
+   promoted exit — a border highlight is enough to show which is active. */
+.exit-card--low-priority.exit-card--selected {
+  border-color: var(--color-sign-yellow-dim);
+}
+
+.exit-card--neutral .exit-card-trigger,
+.exit-card--low-priority .exit-card-trigger {
+  padding-top: var(--space-3);
+}

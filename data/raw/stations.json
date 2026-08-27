@@ -1,0 +1,29 @@
+{
+  "_note": "Temporary manual seed standing in for scripts/fetch-odpt-stations.js step 1 output, since the ODPT developer account is still pending approval. lat/lon here are approximate search anchors only, NOT the source-of-truth station point — fetch-overpass-exits.js resolves the precise coordinate itself via Overpass. Delete this file and regenerate it with the real script once ODPT access lands; nothing downstream should need to change shape.",
+  "stations": [
+    {
+      "id": "odpt.Station:JR-East.ChuoSobuLine.Ochanomizu",
+      "name_en": "Ochanomizu",
+      "name_ja": "御茶ノ水",
+      "lat": 35.6995,
+      "lon": 139.7649,
+      "line_ids": ["odpt.Railway:JR-East.ChuoSobu"]
+    },
+    {
+      "id": "odpt.Station:JR-East.ChuoSobuLine.Suidobashi",
+      "name_en": "Suidobashi",
+      "name_ja": "水道橋",
+      "lat": 35.702,
+      "lon": 139.7531,
+      "line_ids": ["odpt.Railway:JR-East.ChuoSobu"]
+    },
+    {
+      "id": "odpt.Station:JR-East.ChuoSobuLine.Yotsuya",
+      "name_en": "Yotsuya",
+      "name_ja": "四ツ谷",
+      "lat": 35.6857,
+      "lon": 139.7301,
+      "line_ids": ["odpt.Railway:JR-East.ChuoSobu"]
+    }
+  ]
+}

@@ -7,7 +7,9 @@ import './Logo.css'
 export default function Logo() {
   return (
     <div className="logo-bar" role="img" aria-label="Exit Helper">
-      <span className="logo-bar-text">Exit Helper</span>
+      <span className="logo-bar-text">
+        <span className="logo-bar-highlight">Exit</span> Helper
+      </span>
     </div>
   )
 }
